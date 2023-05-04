@@ -1245,6 +1245,11 @@
     "call-me-maybe" "^1.0.1"
     "glob-to-regexp" "^0.3.0"
 
+"@next/env@^13.4.0":
+  "integrity" "sha512-LKofmUuxwGXk2OZJSSJ2SlJE62s6z+56aRsze7chc5TPoVouLR9liTiSWxzYuVzuxk0ui2wtIjyR2tcgS1dIyw=="
+  "resolved" "https://registry.npmjs.org/@next/env/-/env-13.4.0.tgz"
+  "version" "13.4.0"
+
 "@next/react-dev-overlay@9.5.3":
   "integrity" "sha512-R2ZAyFjHHaMTBVi19ZZNRJNXiwn46paRi7EZvKNvMxbrzBcUYtSFj/edU3jQoF1UOcC6vGeMhtPqH55ONrIjCQ=="
   "resolved" "https://registry.npmjs.org/@next/react-dev-overlay/-/react-dev-overlay-9.5.3.tgz"
@@ -4188,13 +4193,13 @@
     "is-png" "^1.0.0"
     "optipng-bin" "^3.0.0"
 
-"imagemin-svgo@^10.0.1":
-  "integrity" "sha512-v27/UTGkb3vrm5jvjsMGQ2oxaDfSOTBfJOgmFO2fYepx05bY1IqWCK13aDytVR+l9w9eOlq0NMCLbxJlghYb2g=="
-  "resolved" "https://registry.npmjs.org/imagemin-svgo/-/imagemin-svgo-10.0.1.tgz"
-  "version" "10.0.1"
+"imagemin-svgo@^9.0.0":
+  "integrity" "sha512-uNgXpKHd99C0WODkrJ8OO/3zW3qjgS4pW7hcuII0RcHN3tnKxDjJWcitdVC/TZyfIqSricU8WfrHn26bdSW62g=="
+  "resolved" "https://registry.npmjs.org/imagemin-svgo/-/imagemin-svgo-9.0.0.tgz"
+  "version" "9.0.0"
   dependencies:
-    "is-svg" "^4.3.1"
-    "svgo" "^2.5.0"
+    "is-svg" "^4.2.1"
+    "svgo" "^2.1.0"
 
 "imagemin@^5.0.0 || ^6.0.0 || ^7.0.0", "imagemin@^6.1.0":
   "integrity" "sha512-8ryJBL1CN5uSHpiBMX0rJw79C9F9aJqMnjGnrd/1CafegpNuA81RBAAru/jQQEOWlOJJlpRnlcVFF6wq+Ist0A=="
@@ -4547,7 +4552,7 @@
   "resolved" "https://registry.npmjs.org/is-stream/-/is-stream-1.1.0.tgz"
   "version" "1.1.0"
 
-"is-svg@^4.3.1":
+"is-svg@^4.2.1":
   "integrity" "sha512-h2CGs+yPUyvkgTJQS9cJzo9lYK06WgRiXUqBBHtglSzVKAuH4/oWsqk7LGfbSa1hGk9QcZ0SyQtVggvBA8LZXA=="
   "resolved" "https://registry.npmjs.org/is-svg/-/is-svg-4.3.1.tgz"
   "version" "4.3.1"
@@ -7330,7 +7335,7 @@
   dependencies:
     "has-flag" "^4.0.0"
 
-"svgo@^2.5.0":
+"svgo@^2.1.0":
   "integrity" "sha512-+N/Q9kV1+F+UeWYoSiULYo4xYSDQlTgb+ayMobAXPwMnLvop7oxKMo9OzIrX5x3eS4L4f2UHhc9axXwY8DpChg=="
   "resolved" "https://registry.npmjs.org/svgo/-/svgo-2.8.0.tgz"
   "version" "2.8.0"
