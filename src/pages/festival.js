@@ -8,7 +8,7 @@ import FestivalBanner from 'sections/festival-banner';
 import Gallery from 'sections/gallery';
 
 export default function Festival() {
-  const galleryImgs = 9;
+  const galleryImgs = 6;
 
   return (
     <ThemeProvider theme={theme}>

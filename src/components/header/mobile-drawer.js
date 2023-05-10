@@ -6,29 +6,24 @@ import { DrawerContext } from '../../contexts/drawer/drawer.context';
 import { IoMdClose, IoMdMenu } from 'react-icons/io';
 import { Link } from 'react-scroll';
 import {
-  FaFacebookF,
+  FaInstagram,
   FaTwitter,
-  FaGithubAlt,
-  FaDribbble,
+  FaLinkedinIn,
 } from 'react-icons/fa';
 import menuItems from './header.data';
 
 const social = [
   {
-    path: '/',
-    icon: <FaFacebookF />,
+    path: 'https://www.instagram.com/estereofestival/',
+    icon: <FaInstagram />,
   },
   {
-    path: '/',
+    path: 'https://twitter.com/EstereoFestival',
     icon: <FaTwitter />,
   },
   {
-    path: '/',
-    icon: <FaGithubAlt />,
-  },
-  {
-    path: '/',
-    icon: <FaDribbble />,
+    path: 'https://www.linkedin.com/company/est%C3%A9reo-festival-de-podcast/',
+    icon: <FaLinkedinIn />,
   },
 ];
 
@@ -168,8 +163,8 @@ const styles = {
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
-      color: 'text',
-      fontSize: 14,
+      color: 'primary',
+      fontSize: 20,
       mr: '15px',
       transition: 'all 0.25s',
       cursor: 'pointer',

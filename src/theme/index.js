@@ -93,6 +93,7 @@ export default {
     },
     news: {
       pb: [8, null, 9, null, null, 10, null, '170px'],
+      pt: [8, null, 9, null, null, 10, null, '170px'],
     },
     coreFeature: {
       pb: [8, null, 9, null, null, 10, null, '170px'],

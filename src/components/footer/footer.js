@@ -22,7 +22,7 @@ export default function Footer() {
                   <Grid sx={styles.logoGrid}>
                     {
                       item.logos.map((logo, i) => (
-                        <Image key={i} src={logo} alt={item.altText} />
+                        <Image key={i} src={logo} alt={item.altText} sx={styles.logo} />
                       ))
                     }
                   </Grid>
@@ -57,9 +57,6 @@ export default function Footer() {
 
 const styles = {
   footer: {
-    mt: 2,
-    borderTop: '1px solid',
-    borderTopColor: 'border_color',
     footerBottomArea: {
       borderTop: '1px solid',
       borderTopColor: 'border_color',
@@ -105,6 +102,7 @@ const styles = {
     py: [1, null, 2],
     width: ['100%', '80%', '100%'],
     mx: 'auto',
+    alignItems: 'center',
     gridTemplateColumns: [
       'repeat(2,1fr)',
       null,
@@ -112,8 +110,12 @@ const styles = {
       'repeat(3,1fr)',
     ],
   },
+  logo: {
+    mx: 'auto',
+    maxHeight: '80px',
+  },
   mainSponsor: {
-    height: '100%',
+    width: '100%',
   },
   widgets: {
     py: [4, null, 6],

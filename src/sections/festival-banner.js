@@ -1,26 +1,28 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui';
-import { Container, Box, Heading, Text } from 'theme-ui';
+import { Container, Box, Image, Text } from 'theme-ui';
 import ShapeLeft from 'assets/shape-left.png';
 import ShapeRight from 'assets/shape-right.png';
 import TextFeature from 'components/text-feature';
-const BannerVid = "https://www.youtube.com/embed/65rqGWf93AU";
+import Logo from 'assets/logo.svg'
 
 export default function FestivalBanner() {
   return (
-    <section sx={styles.banner} id="nosotros">
+    <section sx={styles.banner}>
       <Container sx={styles.banner.container}>
         <Box sx={styles.banner.contentBox}>
-          <Heading as="h1" variant="heroPrimary">
-            Logo Festival
-          </Heading>
+          <Image src={Logo} sx={styles.logo}></Image>
+          <TextFeature title="6 - 7 - 8 de Octube" />
+          <TextFeature title="Rosario, Santa Fe" />
           <Text as="p" variant="heroSecondary">
-            Estéreo fue el <strong>primer</strong> festival de podcasts que se realizó en Argentina, los dias 17, 18 y 19 de Noviembre de 2022; con la participacion de mas de <strong>3.000 personas</strong> en más de <strong>5 sedes</strong> de lugares emblemáticos de la ciudad de Rosario como: cine El Cairo, Plataforma Lavardén, Biblioteca Nacional Argentina y el Centro de Expresiones Contemporáneas.
+            Muy pronto, en esta sección vas a poder encontrar toda la información sobre la edición de este año.
+            <br />
+            ¿Cómo participar? ¿Dónde ir? ¿Qué actividades hay?
           </Text>
-          <TextFeature title="¿Por qué podcast?" />
           <Text as="p" variant="heroSecondary">
-            Es una industria que se encuentra en auge tanto en Latinoamérica como en Estados Unidos y Europa. Las cualidades innovadoras del formato permite su adaptación a las necesidades de consumos on demand sobre tópicos de nicho de las audiencias actuales.
-            Este contexto facilita un presente de expansión tanto en calidad, géneros y público.
+            Seguimos trabajando para darle a toda comunidad podcastera, el festival que se merece.
+            <br />
+            ¡Gracias por apoyarnos!
           </Text>
         </Box>
       </Container>
@@ -29,9 +31,12 @@ export default function FestivalBanner() {
 }
 
 const styles = {
+  logo: {
+    maxWidth: '40%'
+  },
   banner: {
-    pt: ['120px', '125px', '135px', '90px', null, null, '135px', '195px'],
-    pb: [2, null, 0, null, 2, 0, null, 8],
+    pt: ['120px', '125px', '135px', '90px', null, null, '105px', '165px'],
+    pb: [2, null, 0, null, 2, 0, null, 4],
     position: 'relative',
     zIndex: 2,
     '&::before': {

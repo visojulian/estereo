@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Container, Flex, Button } from 'theme-ui';
+import { jsx, Container, Flex, Box } from 'theme-ui';
 import { keyframes } from '@emotion/core';
 import Link from 'next/link';
 import Logo from 'components/logo';
@@ -7,6 +7,27 @@ import LogoDark from 'assets/logo.svg';
 import { DrawerProvider } from '../../contexts/drawer/drawer.provider';
 import MobileDrawer from './mobile-drawer';
 import menuItems from './header.data';
+
+import {
+  FaInstagram,
+  FaTwitter,
+  FaLinkedinIn,
+} from 'react-icons/fa';
+
+const social = [
+  {
+    path: 'https://www.instagram.com/estereofestival/',
+    icon: <FaInstagram />,
+  },
+  {
+    path: 'https://twitter.com/EstereoFestival',
+    icon: <FaTwitter />,
+  },
+  {
+    path: 'https://www.linkedin.com/company/est%C3%A9reo-festival-de-podcast/',
+    icon: <FaLinkedinIn />,
+  },
+];
 
 export default function Header({ className }) {
   return (
@@ -29,13 +50,19 @@ export default function Header({ className }) {
             ))}
           </Flex>
 
-          <Button
-            className="donate__btn"
-            variant="secondary"
-            aria-label="Particpar"
-          >
-            Participar
-          </Button>
+          <Box sx={styles.menuFooter}>
+            <Box sx={styles.social}>
+              {social.map(({ path, icon }, i) => (
+                <Box as="span" key={i} sx={styles.social.icon}>
+                  <Link href={path} passHref>
+                    <a target='_blank' rel="noopener noreferrer">
+                      {icon}
+                    </a>
+                  </Link>
+                </Box>
+              ))}
+            </Box>
+          </Box>
 
           <MobileDrawer />
         </Container>
@@ -110,6 +137,45 @@ const styles = {
       },
       '&.active': {
         color: 'primary',
+      },
+    },
+  },
+
+  social: {
+    width: '100%',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    a: {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      color: 'primary',
+      fontSize: 25,
+      mr: '15px',
+      transition: 'all 0.25s',
+      cursor: 'pointer',
+      ':last-child': {
+        mr: '0',
+      },
+      '&:hover': {
+        color: 'secondary',
+      },
+    },
+    icon: {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      color: 'primary',
+      fontSize: 25,
+      mr: '15px',
+      transition: 'all 0.25s',
+      cursor: 'pointer',
+      ':last-child': {
+        mr: '0',
+      },
+      '&:hover': {
+        color: 'secondary',
       },
     },
   },

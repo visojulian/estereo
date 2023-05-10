@@ -146,6 +146,62 @@ const data = [
     ],
   },
 ];
+const colaboradores = [
+  {
+    id: 1,
+    imgSrc: Member1,
+    altText: 'Federico Rusconi',
+    title: 'Federico Rusconi',
+    designation: 'Director de Alianzas',
+    socialProfile: [
+      {
+        id: 1,
+        name: 'linkedin',
+        path: 'https://www.linkedin.com/in/frusconi/',
+        icon: <FaLinkedinIn />,
+      },
+      {
+        id: 2,
+        name: 'twitter',
+        path: 'https://twitter.com/el_dudux',
+        icon: <FaTwitter />,
+      },
+      {
+        id: 3,
+        name: 'instagram',
+        path: 'https://instagram.com/el_dudux',
+        icon: <FaInstagram />,
+      },
+    ],
+  },
+  {
+    id: 2,
+    imgSrc: Member2,
+    altText: 'Martín Parodi',
+    title: 'Martín Parodi',
+    designation: 'Director General',
+    socialProfile: [
+      {
+        id: 1,
+        name: 'linkedin',
+        path: 'https://ar.linkedin.com/in/mart%C3%ADn-parodi-441a64ba',
+        icon: <FaLinkedinIn />,
+      },
+      {
+        id: 2,
+        name: 'twitter',
+        path: 'https://twitter.com/martinparolax',
+        icon: <FaTwitter />,
+      },
+      {
+        id: 3,
+        name: 'instagram',
+        path: 'https://www.instagram.com/martinparola',
+        icon: <FaInstagram />,
+      },
+    ]
+  },
+];
 
 export default function TeamSection() {
   return (
@@ -153,7 +209,7 @@ export default function TeamSection() {
       <Container>
         <SectionHeader
           slogan="detrás de escena"
-          title="El equipo de Estéreo"
+          title="El equipo organizador de Estéreo"
         />
 
         <Grid sx={styles.grid}>
@@ -168,6 +224,22 @@ export default function TeamSection() {
             />
           ))}
         </Grid>
+        {/* <SectionHeader
+          title="Colaboradoras"
+        />
+
+        <Grid sx={styles.gridColaboradores}>
+          {colaboradores.map((item) => (
+            <TeamCard
+              key={`team--key${item.id}`}
+              src={item.imgSrc}
+              altText={item.altText}
+              title={item.title}
+              designation={item.designation}
+              social={item.socialProfile}
+            />
+          ))}
+        </Grid> */}
       </Container>
     </section>
   );
@@ -183,6 +255,17 @@ const styles = {
       'repeat(2,1fr)',
       null,
       'repeat(3,1fr)',
+    ],
+  },
+  gridColaboradores: {
+    mt: [0, null, -6, null, -4],
+    gridGap: ['35px 0px', null, 0, null, null, '30px 35px'],
+    gridTemplateColumns: [
+      'repeat(2,1fr)',
+      null,
+      'repeat(2,1fr)',
+      null,
+      'repeat(2,1fr)',
     ],
   },
 };

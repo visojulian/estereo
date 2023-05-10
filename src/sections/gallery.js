@@ -51,9 +51,6 @@ export default function Gallery(props) {
 };
 
 const styles = {
-  gallery: {
-    pt: 100,
-  },
   grid: {
     mb: -1,
     pt: 0,

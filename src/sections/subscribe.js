@@ -65,7 +65,7 @@ export default function Subscribe() {
     const { error } = await res.json();
     handleMailChimpResponse(
       error,
-      'Listo! 🎉 Estás en nuestra lista privada de amigues.'
+      'Listo! 🎉 Estás en nuestra lista exclusiva de mensajes.'
     );
     // For sendGrid integration
     const text = await res.text();

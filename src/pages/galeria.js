@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, Container, ThemeProvider } from 'theme-ui';
+import { Box, Button, Container, ThemeProvider } from 'theme-ui';
 import { StickyProvider } from '../contexts/app/app.provider';
 import theme from 'theme';
 import SEO from 'components/seo';
@@ -19,7 +19,9 @@ export default function Galeria() {
       <StickyProvider>
         <Layout>
           <SEO title="Festival Estereo" />
-          <Gallery show={show} setIsComplete={setIsComplete} />
+          <Box sx={styles.gallery} >
+            <Gallery show={show} setIsComplete={setIsComplete} />
+          </Box>
           {
             !isComplete &&
             <Container sx={styles.btnContainer}>
@@ -40,6 +42,9 @@ export default function Galeria() {
 };
 
 const styles = {
+  gallery: {
+    pt: '100px',
+  },
   btnContainer: {
     display: 'flex',
     justifyContent: 'center',

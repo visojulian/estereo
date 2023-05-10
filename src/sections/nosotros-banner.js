@@ -1,10 +1,10 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui';
-import { Container, Box, Heading, Text } from 'theme-ui';
+import { Container, Box, Heading, Text, Image } from 'theme-ui';
 import ShapeLeft from 'assets/shape-left.png';
 import ShapeRight from 'assets/shape-right.png';
 import TextFeature from 'components/text-feature';
-const BannerVid = "https://www.youtube.com/embed/65rqGWf93AU";
+import Nosotros from 'assets/team/nosotros.png'
 
 export default function NosotrosBanner() {
   return (
@@ -22,6 +22,7 @@ export default function NosotrosBanner() {
             Es una industria que se encuentra en auge tanto en Latinoamérica como en Estados Unidos y Europa. Las cualidades innovadoras del formato permite su adaptación a las necesidades de consumos on demand sobre tópicos de nicho de las audiencias actuales.
             Este contexto facilita un presente de expansión tanto en calidad, géneros y público.
           </Text>
+          <Image src={Nosotros} sx={styles.image} />
         </Box>
       </Container>
     </section>
@@ -30,7 +31,7 @@ export default function NosotrosBanner() {
 
 const styles = {
   banner: {
-    pt: ['120px', '125px', '135px', '90px', null, null, '135px', '195px'],
+    pt: ['120px', '125px', '135px', '90px', null, null, '105px', '165px'],
     pb: [2, null, 0, null, 2, 0, null, 8],
     position: 'relative',
     zIndex: 2,
@@ -67,20 +68,13 @@ const styles = {
       justifyContent: 'center',
     },
     contentBox: {
-      width: ['100%', '90%', '535px', null, '57%', '75%', '80%', '75%'],
+      width: ['100%', '90%', '535px', null, '57%', '75%', '90%', '85%'],
       mx: 'auto',
       textAlign: 'center',
       mb: ['40px', null, null, null, null, 7],
     },
-    imageBox: {
-      justifyContent: 'center',
-      textAlign: 'center',
-      display: 'inline-flex',
-      mb: [0, null, -6, null, null, '-40px', null, -3],
-      img: {
-        position: 'relative',
-        height: [245, 'auto'],
-      },
-    },
+  },
+  image: {
+    height: '100%',
   },
 };

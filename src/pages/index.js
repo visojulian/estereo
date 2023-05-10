@@ -5,16 +5,10 @@ import theme from 'theme';
 import SEO from 'components/seo';
 import Layout from 'components/layout';
 import Banner from '../sections/banner';
-// import Festival from '../sections/festival';
 import Cifespod from '../sections/cifespod';
-// import Feature from '../sections/feature';
-// import CoreFeature from '../sections/core-feature';
 import Festival from '../sections/festival';
-// import Package from '../sections/package';
-// import TeamSection from '../sections/team-section';
 import TestimonialCard from '../sections/testimonial';
-// import BlogSection from '../sections/blog-section';
-import Subscribe from '../sections/subscribe';
+// import Subscribe from '../sections/subscribe';
 import PhotoCarousel from 'sections/photo-carousel';
 
 export default function IndexPage() {
@@ -25,16 +19,10 @@ export default function IndexPage() {
           <SEO title="Festival Estereo" />
           <Banner />
           <PhotoCarousel />
-          {/* <Festival /> */}
           <Cifespod />
-          {/* <Feature />
-          <CoreFeature /> */}
           <Festival />
-          {/* <Package />
-          <TeamSection /> */}
           <TestimonialCard />
-          {/* <BlogSection /> */}
-          <Subscribe />
+          {/* <Subscribe /> */}
         </Layout>
       </StickyProvider>
     </ThemeProvider>
