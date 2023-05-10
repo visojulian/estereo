@@ -14,7 +14,13 @@ export default function Logo({ src, ...rest }) {
       }}
       {...rest}
     >
-      <Image src={src} alt="estereo landing logo" />
+      <Image sx={styles.logo} src={src} alt="estereo landing logo" />
     </Link>
   );
-}
+};
+
+const styles = {
+  logo: {
+    maxWidth: '130px'
+  },
+};

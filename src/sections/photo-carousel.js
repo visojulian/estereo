@@ -1,34 +1,12 @@
 /** @jsx jsx */
-import { jsx, Container, Box, Image } from 'theme-ui';
+import { jsx, Container, Box, Image, Button } from 'theme-ui';
 import SectionHeader from 'components/section-header';
 import Carousel from 'react-multi-carousel';
 import ButtonGroup from 'components/button-group';
 import { Lightbox } from 'react-modal-image';
-
-import Avatar1 from 'assets/photo-carousel/fugas.jpg';
-import Avatar2 from 'assets/photo-carousel/fugas.jpg';
-import Avatar3 from 'assets/photo-carousel/fugas.jpg';
-import Avatar4 from 'assets/photo-carousel/fugas.jpg';
 import { useState } from 'react';
-
-const data = [
-  {
-    id: 1,
-    avatar: Avatar1,
-  },
-  {
-    id: 2,
-    avatar: Avatar2,
-  },
-  {
-    id: 3,
-    avatar: Avatar3,
-  },
-  {
-    id: 4,
-    avatar: Avatar4,
-  },
-];
+import gallery from '../utils/gallery-loader';
+import { Link } from 'components/link';
 
 const responsive = {
   desktop: {
@@ -55,10 +33,14 @@ const responsive = {
 
 export default function PhotoCarousel() {
   const [imageOpen, setImageOpen] = useState(false);
+  const [image, setImage] = useState(false);
   const handleClick = (e) => {
     e.preventDefault();
     setImageOpen(true);
+    setImage(e.target.src);
   };
+
+
   return (
     <section id="photo-crousel" sx={{ variant: 'section.testimonial' }}>
       <Container css={{ textAlign: 'center' }}>
@@ -68,6 +50,7 @@ export default function PhotoCarousel() {
         <Carousel
           additionalTransfrom={0}
           arrows={false}
+          autoPlay
           autoPlaySpeed={3000}
           centerMode={false}
           className=""
@@ -86,29 +69,40 @@ export default function PhotoCarousel() {
           sliderClass=""
           slidesToSlide={1}
         >
-          {data.map((item) => (
-            <Box key={`photo--key${item.id}`}>
-              <div sx={styles.image}>
-                <Image
-                  src={item.avatar}
-                  onClick={handleClick}
-                  alt="Foto del evento"
-                />
-              </div>
-            </Box>
+          {gallery.map((item, i) => (
+            item && (
+              <Box key={i}>
+                <div sx={styles.image}>
+                  <Image
+                    src={item}
+                    onClick={handleClick}
+                    alt="Foto del evento"
+                  />
+                </div>
+              </Box>
+            )
           ))}
         </Carousel>
-      </Box>
+        <Link path="/galeria">
+          <Button
+            sx={styles.galleryBtn}
+            variant="secondary"
+            aria-label="Ver todas las fotos"
+          >
+            Ver todas las fotos
+          </Button>
+        </Link>
+      </Box >
       {imageOpen &&
         <Lightbox
           onClose={() => setImageOpen(false)}
-          small={Avatar1}
-          large={Avatar1}
+          small={image}
+          large={image}
           hideDownload
           hideZoom
         />
       }
-    </section>
+    </section >
   );
 }
 
@@ -117,7 +111,7 @@ const styles = {
     display: 'flex',
     justifyContent: 'flex-end',
     flexDirection: 'column',
-    alignItems: 'flex-end',
+    alignItems: 'center',
     mt: '-30px',
     px: '15px',
     '.carousel-container': {
@@ -148,9 +142,10 @@ const styles = {
   image: {
     mr: [3, 3, 3, 4],
     display: 'flex',
-    img: {
-      width: 'auto',
-      height: 'auto',
-    },
+    maxHeight: '209px',
+    width: 'auto',
   },
+  galleryBtn: {
+    mt: 4
+  }
 };

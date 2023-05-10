@@ -72,7 +72,7 @@ const data = [
     imgSrc: Member3,
     altText: 'Iván Jimenez',
     title: 'Iván Jimenez',
-    designation: 'Productor General',
+    designation: 'Director de Producción & Técnica',
     socialProfile: [
       {
         id: 1,

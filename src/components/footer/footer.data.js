@@ -1,32 +1,32 @@
-import Chat from 'assets/widget/chat.svg';
-import Community from 'assets/widget/community.svg';
-import Github from 'assets/widget/github.svg';
+import Chat from 'assets/sponsor/dropbox.svg';
+import Community from 'assets/sponsor/google.svg';
+import Github from 'assets/sponsor/paypal.svg';
 
 export default {
   widgets: [
     {
       id: 1,
-      iconSrc: Chat,
-      altText: 'Community',
-      title: 'Join the Community',
-      description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod tempor.',
+      logos: [Chat],
+      altText: 'Main Sponsor',
+      title: 'Main Sponsor',
     },
     {
       id: 2,
-      iconSrc: Community,
-      altText: 'Chat',
-      title: 'Chat Communication',
-      description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod tempor.',
+      logos: [Community, Community, Community, Community, Community],
+      altText: 'Partner',
+      title: 'Partners',
     },
     {
       id: 3,
-      iconSrc: Github,
-      altText: 'Github',
-      title: 'Github Access',
-      description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod tempor.',
+      logos: [Github, Github, Github],
+      altText: 'Espacio',
+      title: 'Espacios',
+    },
+    {
+      id: 4,
+      logos: [Github, Community, Github, Community],
+      altText: 'Comunidad',
+      title: 'Comunidades',
     },
   ],
   menuItem: [
@@ -35,20 +35,20 @@ export default {
       label: 'Home',
     },
     {
-      path: '/',
-      label: 'Adversite',
+      path: '/galeria',
+      label: 'Galería',
     },
     {
-      path: '/',
-      label: 'Supports',
+      path: '#partners',
+      label: 'Partners',
     },
     {
-      path: '/',
-      label: 'Marketing',
+      path: '/2022',
+      label: '2022',
     },
     {
-      path: '/',
-      label: 'Contact',
+      path: '/contacto',
+      label: 'Contacto',
     },
   ],
 };

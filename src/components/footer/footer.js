@@ -1,16 +1,39 @@
 /** @jsx jsx */
-import { jsx, Box, Container, Image, Text } from 'theme-ui';
+import { jsx, Box, Container, Grid, Image, Heading, Text } from 'theme-ui';
 import { Link } from 'components/link';
 import data from './footer.data';
-import FooterLogo from 'assets/logo.svg';
+import LogoDark from 'assets/logo.svg';
+import Logo from 'components/logo';
 export default function Footer() {
   return (
     <footer sx={styles.footer}>
       <Container>
+        <Grid sx={styles.widgets} id='partners'>
+          {data.widgets.map((item) => (
+            <Box
+              key={`footer-widget--key${item.id}`}
+              sx={styles.widgets.widgetItem}
+            >
+              <Box sx={styles.widgets.infoWrapper}>
+                <Heading as="h3" sx={styles.widgets.title}>{item.title}</Heading>
+              </Box>
+              {
+                item.logos.length > 1 ?
+                  <Grid sx={styles.logoGrid}>
+                    {
+                      item.logos.map((logo, i) => (
+                        <Image key={i} src={logo} alt={item.altText} />
+                      ))
+                    }
+                  </Grid>
+                  :
+                  <Image sx={styles.mainSponsor} src={item.logos[0]} alt={item.altText} />
+              }
+            </Box>
+          ))}
+        </Grid>
         <Box sx={styles.footer.footerBottomArea}>
-          <Link path="/">
-            <Image src={FooterLogo} alt="Logo" />
-          </Link>
+          <Logo src={LogoDark} />
           <Box sx={styles.footer.menus}>
             <nav>
               {data.menuItem.map(({ path, label }, i) => (
@@ -34,6 +57,9 @@ export default function Footer() {
 
 const styles = {
   footer: {
+    mt: 2,
+    borderTop: '1px solid',
+    borderTopColor: 'border_color',
     footerBottomArea: {
       borderTop: '1px solid',
       borderTopColor: 'border_color',
@@ -42,6 +68,7 @@ const styles = {
       pb: ['40px', null, '100px'],
       textAlign: 'center',
       flexDirection: 'column',
+      alignItems: 'center',
     },
     menus: {
       mt: [3, 4],
@@ -74,8 +101,22 @@ const styles = {
       width: '100%',
     },
   },
+  logoGrid: {
+    py: [1, null, 2],
+    width: ['100%', '80%', '100%'],
+    mx: 'auto',
+    gridTemplateColumns: [
+      'repeat(2,1fr)',
+      null,
+      'repeat(3,1fr)',
+      'repeat(3,1fr)',
+    ],
+  },
+  mainSponsor: {
+    height: '100%',
+  },
   widgets: {
-    py: [8, null, 9],
+    py: [4, null, 6],
     px: [4, 0, 3, null, 7, 10],
     width: ['100%', '80%', '100%'],
     mx: 'auto',
@@ -84,10 +125,13 @@ const styles = {
       'repeat(1,1fr)',
       null,
       'repeat(2,1fr)',
-      'repeat(3,1fr)',
+      'repeat(2,1fr)',
     ],
     widgetItem: {
       textAlign: 'center',
+    },
+    title: {
+      pb: 3,
     },
     infoWrapper: {
       mt: [2, 3, null, 2, 4],

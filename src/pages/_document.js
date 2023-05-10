@@ -10,11 +10,11 @@ class CustomDocument extends Document {
     return (
       <Html lang="es-ES">
         <Head>
-          <script async src="https://platform.twitter.com/widgets.js"></script>
         </Head>
         <body>
           <Main />
           <NextScript />
+          <script async src="https://platform.twitter.com/widgets.js"></script>
         </body>
       </Html>
     );
