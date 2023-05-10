@@ -8,7 +8,7 @@ import Sembra from 'assets/sponsor/sembramedia.png';
 import Biblioteca from 'assets/sponsor/biblio.png';
 import Cultura from 'assets/sponsor/cultura.png';
 import Diputados from 'assets/sponsor/diputados.png';
-import Galpon from 'assets/sponsor/Galpon.png';
+import Galpon from 'assets/sponsor/galpon.png';
 import Esc from 'assets/sponsor/ecs.png';
 import Cairo from 'assets/sponsor/elcairo.png';
 import Fomento from 'assets/sponsor/fomento.png';
