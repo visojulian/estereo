@@ -9,7 +9,7 @@ import {
 } from 'theme-ui';
 import TextFeature from 'components/text-feature';
 
-import ServiceImg from 'assets/cifespod.png';
+import MapaCifespod from 'assets/cifespod.svg';
 import shapePattern from 'assets/shape-pattern1.png';
 
 const data = {
@@ -22,7 +22,7 @@ export default function Cifespod() {
     <section sx={{ variant: 'section.services' }}>
       <Container sx={styles.containerBox}>
         <Box sx={styles.thumbnail}>
-          <Image src={ServiceImg} alt="Thumbnail" />
+          <Image src={MapaCifespod} alt="Mapa cifespod" />
           <Box sx={styles.shapeBox}>
             <Image src={shapePattern} alt="Shape" />
           </Box>

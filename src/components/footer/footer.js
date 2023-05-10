@@ -3,6 +3,8 @@ import { jsx, Box, Container, Grid, Image, Heading, Text } from 'theme-ui';
 import { Link } from 'components/link';
 import data from './footer.data';
 import LogoDark from 'assets/logo.svg';
+import Cifespod from 'assets/cifespod.png';
+
 export default function Footer() {
   return (
     <footer sx={styles.footer}>
@@ -32,7 +34,10 @@ export default function Footer() {
           ))}
         </Grid>
         <Box sx={styles.footer.footerBottomArea}>
-          <Image src={LogoDark} sx={styles.logoFooter} />
+          <Box sx={styles.logoGroup}>
+            <Image src={LogoDark} sx={styles.logoFooter} />
+            <Image src={Cifespod} sx={styles.logoGroup.cifespod} />
+          </Box>
           <Box sx={styles.footer.menus}>
             <nav>
               {data.menuItem.map(({ path, label }, i) => (
@@ -55,6 +60,15 @@ export default function Footer() {
 }
 
 const styles = {
+  logoGroup: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    height: '147px',
+    cifespod: {
+      width: '147px',
+      ml: 3,
+    },
+  },
   footer: {
     footerBottomArea: {
       borderTop: '1px solid',

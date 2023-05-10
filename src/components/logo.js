@@ -1,6 +1,7 @@
 /** @jsx jsx */
-import { jsx, Image } from 'theme-ui';
+import { jsx, Image, Box } from 'theme-ui';
 import { Link } from 'components/link';
+import Cifespod from 'assets/cifespod.png';
 
 export default function Logo({ src, ...rest }) {
   return (
@@ -14,13 +15,21 @@ export default function Logo({ src, ...rest }) {
       }}
       {...rest}
     >
-      <Image sx={styles.logo} src={src} alt="estereo landing logo" />
+      <Box sx={styles.logoGroup}>
+        <Image sx={styles.logo} src={src} alt="estereo landing logo" />
+        <Image src={Cifespod} alt="cifespod logo" />
+      </Box>
     </Link>
   );
 };
 
 const styles = {
+  logoGroup: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    height: '80px'
+  },
   logo: {
-    maxWidth: '130px'
+    mr: 3,
   },
 };
