@@ -3,7 +3,6 @@ import { jsx, Box, Container, Grid, Image, Heading, Text } from 'theme-ui';
 import { Link } from 'components/link';
 import data from './footer.data';
 import LogoDark from 'assets/logo.svg';
-import Logo from 'components/logo';
 export default function Footer() {
   return (
     <footer sx={styles.footer}>
@@ -33,7 +32,7 @@ export default function Footer() {
           ))}
         </Grid>
         <Box sx={styles.footer.footerBottomArea}>
-          <Logo src={LogoDark} />
+          <Image src={LogoDark} sx={styles.logoFooter} />
           <Box sx={styles.footer.menus}>
             <nav>
               {data.menuItem.map(({ path, label }, i) => (
@@ -113,6 +112,10 @@ const styles = {
   logo: {
     mx: 'auto',
     maxHeight: '80px',
+  },
+  logoFooter: {
+    mx: 'auto',
+    width: '300px',
   },
   mainSponsor: {
     width: '100%',
