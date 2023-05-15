@@ -9,28 +9,28 @@ import ArrowEven from 'assets/arrowEven.svg';
 
 const data = [
   {
-    id: "S",
+    id: "23",
     title: 'Shows en vivo',
     text:
-      'Más de 20 podcast en vivo de todo el país: experiencias inmersivas, presentaciones especiales y mucho más.',
+      'Podcast en vivo de todo el país: experiencias inmersivas, presentaciones especiales y mucho más.',
   },
   {
-    id: "F",
-    title: 'Formaciones',
+    id: "10",
+    title: 'Talleres',
     text:
-      'Talleres abiertos y gratuitos que fomentan la profesionalización del podcast, al alcance de la mano.',
+      'Talleres abiertos y gratuitos que fomentan la profesionalización del podcast, al alcance de la mano. Una decena y creciendo: en cada edición deseamos aportar cada vez más espacios formativos de calidad.',
   },
   {
-    id: "C",
+    id: "18",
     title: 'Conversatorios',
     text:
-      'Pensar y debatir el futuro de la industria es uno de los ejes principales del festival.',
+      'Pensar y debatir el futuro de la industria es uno de los ejes principales del festival. Alrededor de 50 profesionales del podcast se sentaron en nuestras mesas de charlas abiertas.',
   },
   {
-    id: "N",
+    id: "3k",
     title: 'Networking',
     text:
-      'Desbordar esencia digital del podcast, para decubrir la inmensa industria detrás de su existencia.',
+      'Logramos desbordar la esencia digital del podcast, para decubrir la inmensa industria detrás de su existencia. Un total de 3000 personas pasaron por Estéreo en su primer edición',
   },
 ];
 

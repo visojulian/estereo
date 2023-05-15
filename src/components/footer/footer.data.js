@@ -22,18 +22,18 @@ import EscuchaPodcast from 'assets/sponsor/escuchapodcast.png';
 
 export default {
   widgets: [
-    {
-      id: 1,
-      logos: [Podimo],
-      altText: 'Main Sponsor',
-      title: 'Main Sponsor',
-    },
-    {
-      id: 2,
-      logos: [SanCristobal, Taragui, Cima, Hindenburg, Chevallier, Sembra],
-      altText: 'Partner',
-      title: 'Partners',
-    },
+    // {
+    //   id: 1,
+    //   logos: [Podimo],
+    //   altText: 'Main Sponsor',
+    //   title: 'Main Sponsor',
+    // },
+    // {
+    //   id: 2,
+    //   logos: [SanCristobal, Taragui, Cima, Hindenburg, Chevallier, Sembra],
+    //   altText: 'Partner',
+    //   title: 'Partners',
+    // },
     {
       id: 3,
       logos: [Biblioteca, Cultura, Diputados, Galpon, Esc, Cairo, Fomento, Labso, Municipalidad, Unraf],

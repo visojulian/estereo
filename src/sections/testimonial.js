@@ -1,38 +1,10 @@
 /** @jsx jsx */
-import { jsx, Container, Heading, Text, Box, Image } from 'theme-ui';
+import { jsx, Container, Box } from 'theme-ui';
 import SectionHeader from 'components/section-header';
 import ButtonGroup from 'components/button-group';
 import Carousel from 'react-multi-carousel';
 
-import Avatar1 from 'assets/testimonial/avatar1.png';
-import Avatar2 from 'assets/testimonial/avatar2.png';
-import Avatar3 from 'assets/testimonial/avatar3.png';
-import Avatar4 from 'assets/testimonial/avatar4.png';
-
 import Tweets from './tweets-data';
-
-const data = [
-  {
-    id: 1,
-    title: 'Modern look & trending design',
-    description:
-      'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
-    avatar: Avatar1,
-    name: 'Denny Hilguston',
-    designation: '@denny.hil',
-    review: 4,
-  },
-  {
-    id: 2,
-    title: 'Design Quality & performance',
-    description:
-      'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
-    avatar: Avatar2,
-    name: 'Denny Hilguston',
-    designation: '@denny.hil',
-    review: 5,
-  },
-];
 
 const responsive = {
   desktop: {
@@ -100,6 +72,7 @@ export default function TestimonialCard() {
 const styles = {
   carouselWrapper: {
     display: 'flex',
+    flexGrow: '0',
     justifyContent: 'flex-end',
     flexDirection: 'column',
     alignItems: 'flex-end',

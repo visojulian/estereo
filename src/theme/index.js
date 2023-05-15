@@ -101,7 +101,7 @@ export default {
     },
     testimonial: {
       pt: [8, null, 8, '70px', null, 8, null, '145px'],
-      pb: ['90px', null, 9, null, null, 10, null, '190px'],
+      // pb: ['90px', null, 9, null, null, 10, null, '190px'],
       overflow: 'hidden',
     },
     services: {

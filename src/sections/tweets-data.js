@@ -3,14 +3,14 @@ import { jsx } from 'theme-ui';
 
 const tweet1 = () => {
   return (
-    <blockquote className="twitter-tweet">
+    <blockquote className="twitter-tweet" width="550px">
       <p lang="es" dir="ltr">Una producción local prolífica y premiada, y el primer festival especializado del país, dan
-        cuenta del fuerte vínculo de la ciudad con el formato.<br /><br />→ <a
-          href="https://t.co/UjkejpuOLc">https://t.co/UjkejpuOLc</a><br /><br />Por Morena Pardo<br />Foto Instagram (<a
-            href="https://twitter.com/EstereoFestival?ref_src=twsrc%5Etfw">@estereofestival</a>) <a
-              href="https://t.co/N5dBkXIth1">pic.twitter.com/N5dBkXIth1</a></p>&mdash; Diario La Capital (@lacapital) <a
-                href="https://twitter.com/lacapital/status/1640025819350470660?ref_src=twsrc%5Etfw">March 26, 2023</a>
-    </blockquote>
+        cuenta del fuerte vínculo de la ciudad con el formato.< br /> <br />→ <a
+          href="https://t.co/UjkejpuOLc">https://t.co/UjkejpuOLc</a><br /><br />Por Morena Pardo < br /> Foto Instagram(<a
+            href="https://twitter.com/EstereoFestival?ref_src=twsrc%5Etfw">@estereofestival</a>) < a
+              href="https://t.co/N5dBkXIth1" > pic.twitter.com / N5dBkXIth1</a ></p >& mdash; Diario La Capital(@lacapital) < a
+                href="https://twitter.com/lacapital/status/1640025819350470660?ref_src=twsrc%5Etfw" > March 26, 2023</a >
+    </blockquote >
   );
 }
 const tweet2 = () => {
@@ -36,10 +36,10 @@ const tweet5 = () => {
 }
 const tweet6 = () => {
   return (
-    <blockquote className="twitter-tweet"><p lang="es" dir="ltr">🎧 Un poco de <a href="https://twitter.com/hashtag/Fugas?src=hash&amp;ref_src=twsrc%5Etfw">#Fugas</a> en vivo en el <a href="https://twitter.com/EstereoFestival?ref_src=twsrc%5Etfw">@EstereoFestival</a> 🇦🇷<br /><br />🙌 Así fue nuestro paso por Rosario en el gran festival argentino de podcast.<br /><br />🎙Compartimos mesa con grandes podcasterxs locales e internacionales y disfrutamos de dos funciones de <a href="https://twitter.com/hashtag/Fugas?src=hash&amp;ref_src=twsrc%5Etfw">#Fugas</a> en vivo. <br /><br />📷 <a href="https://twitter.com/ColaprettiGi?ref_src=twsrc%5Etfw">@ColaprettiGi</a> <a href="https://t.co/8hABP29hLF">pic.twitter.com/8hABP29hLF</a></p>&mdash; anfibia podcast (@anfibiapodcast) <a href="https://twitter.com/anfibiapodcast/status/1595137704278515713?ref_src=twsrc%5Etfw">November 22, 2022</a></blockquote>
+    <blockquote className="twitter-tweet" width="550"><p lang="es" dir="ltr">🎧 Un poco de <a href="https://twitter.com/hashtag/Fugas?src=hash&amp;ref_src=twsrc%5Etfw">#Fugas</a> en vivo en el <a href="https://twitter.com/EstereoFestival?ref_src=twsrc%5Etfw">@EstereoFestival</a> 🇦🇷<br /><br />🙌 Así fue nuestro paso por Rosario en el gran festival argentino de podcast.<br /><br />🎙Compartimos mesa con grandes podcasterxs locales e internacionales y disfrutamos de dos funciones de <a href="https://twitter.com/hashtag/Fugas?src=hash&amp;ref_src=twsrc%5Etfw">#Fugas</a> en vivo. <br /><br />📷 <a href="https://twitter.com/ColaprettiGi?ref_src=twsrc%5Etfw">@ColaprettiGi</a> <a href="https://t.co/8hABP29hLF">pic.twitter.com/8hABP29hLF</a></p>&mdash; anfibia podcast (@anfibiapodcast) <a href="https://twitter.com/anfibiapodcast/status/1595137704278515713?ref_src=twsrc%5Etfw">November 22, 2022</a></blockquote>
   );
 }
 
-const Tweets = [tweet1(), tweet2(), tweet3(), tweet4(), tweet5(), tweet6()];
+const Tweets = [tweet1(), tweet2(), tweet3(), tweet5(), tweet6()];
 
 export default Tweets;

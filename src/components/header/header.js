@@ -96,11 +96,6 @@ const styles = {
     backgroundColor: 'transparent',
     transition: 'all 0.4s ease',
     animation: `${positionAnim} 0.4s ease`,
-    '.donate__btn': {
-      flexShrink: 0,
-      mr: [15, 20, null, null, 0],
-      ml: ['auto', null, null, null, 0],
-    },
     '&.sticky': {
       position: 'fixed',
       backgroundColor: 'background',
@@ -142,8 +137,11 @@ const styles = {
   },
 
   social: {
+    display: 'none',
+    '@media screen and (min-width: 1024px)': {
+      display: 'flex',
+    },
     width: '100%',
-    display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
     a: {

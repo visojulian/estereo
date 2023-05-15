@@ -36,7 +36,14 @@ export default function Footer() {
         <Box sx={styles.footer.footerBottomArea}>
           <Box sx={styles.logoGroup}>
             <Image src={LogoDark} sx={styles.logoFooter} />
-            <Image src={Cifespod} sx={styles.logoGroup.cifespod} />
+            <Box>
+              <Image src={Cifespod} sx={styles.logoGroup.cifespod} />
+              <Text sx={styles.logoGroup.cifespodText}>
+                <strong>
+                  Circuito Iberoamericano <br /> de Festivales de Podcast
+                </strong>
+              </Text>
+            </Box>
           </Box>
           <Box sx={styles.footer.menus}>
             <nav>
@@ -62,10 +69,19 @@ export default function Footer() {
 const styles = {
   logoGroup: {
     display: 'flex',
-    justifyContent: 'space-between',
-    height: '147px',
+    justifyContent: 'space-around',
     cifespod: {
-      width: '147px',
+      width: '70px',
+      '@media screen and (min-width: 1024px)': {
+        width: '147px',
+      },
+      ml: 3,
+    },
+    cifespodText: {
+      fontSize: '12px',
+      '@media screen and (min-width: 1024px)': {
+        fontSize: '14px',
+      },
       ml: 3,
     },
   },
@@ -128,8 +144,8 @@ const styles = {
     maxHeight: '80px',
   },
   logoFooter: {
-    mx: 'auto',
-    width: '300px',
+    width: '40%',
+    my: 'auto',
   },
   mainSponsor: {
     width: '100%',
