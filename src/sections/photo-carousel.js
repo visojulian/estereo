@@ -92,7 +92,7 @@ export default function PhotoCarousel() {
             Ver todas las fotos
           </Button>
         </Link>
-      </Box >
+      </Box>
       {imageOpen &&
         <Lightbox
           onClose={() => setImageOpen(false)}
@@ -146,6 +146,6 @@ const styles = {
     width: 'auto',
   },
   galleryBtn: {
-    mt: 4
+    my: 4
   }
 };

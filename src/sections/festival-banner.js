@@ -1,19 +1,22 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui';
-import { Container, Box, Image, Text } from 'theme-ui';
+import { Container, Box, Image, Text, Heading } from 'theme-ui';
 import ShapeLeft from 'assets/shape-left.png';
 import ShapeRight from 'assets/shape-right.png';
-import TextFeature from 'components/text-feature';
-import Logo from 'assets/logo.svg'
+import Logo from 'assets/logosimple.svg'
 
 export default function FestivalBanner() {
   return (
     <section sx={styles.banner}>
       <Container sx={styles.banner.container}>
         <Box sx={styles.banner.contentBox}>
+          <Heading as="h2" variant="heroPrimary">
+            <span sx={{ letterSpacing: '10px' }}>6.7.8</span> DE OCTUBRE
+          </Heading>
           <Image src={Logo} sx={styles.logo}></Image>
-          <TextFeature title="6 - 7 - 8 de Octube" />
-          <TextFeature title="Rosario, Santa Fe" />
+          <Heading as="h3" variant="heroThird">
+            ROSARIO, ARGENTINA
+          </Heading>
           <Text as="p" variant="heroSecondary">
             Muy pronto, en esta sección vas a poder encontrar toda la información sobre la edición de este año.
             <br />
@@ -32,7 +35,8 @@ export default function FestivalBanner() {
 
 const styles = {
   logo: {
-    maxWidth: '40%'
+    maxWidth: '40%',
+    mb: 4,
   },
   banner: {
     pt: ['120px', '125px', '135px', '90px', null, null, '105px', '165px'],
@@ -76,6 +80,7 @@ const styles = {
       mx: 'auto',
       textAlign: 'center',
       mb: ['40px', null, null, null, null, 7],
+      pt: '20px',
     },
     imageBox: {
       justifyContent: 'center',

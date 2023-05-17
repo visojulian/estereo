@@ -27,7 +27,7 @@ const styles = {
   logoGroup: {
     display: 'flex',
     justifyContent: 'space-between',
-    height: '80px'
+    height: '60px'
   },
   logo: {
     mr: 3,

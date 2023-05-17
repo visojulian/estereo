@@ -106,7 +106,6 @@ const styles = {
         flexWrap: 'wrap',
       },
     },
-
     link: {
       fontSize: [1, '15px'],
       color: 'text',
@@ -141,19 +140,19 @@ const styles = {
   },
   logo: {
     mx: 'auto',
-    maxHeight: '80px',
+    maxHeight: '60px',
   },
   logoFooter: {
     width: '40%',
     my: 'auto',
   },
   mainSponsor: {
-    width: '100%',
+    width: '80%',
   },
   widgets: {
     py: [4, null, 6],
     px: [4, 0, 3, null, 7, 10],
-    width: ['100%', '80%', '100%'],
+    width: ['80%', '80%', '100%'],
     mx: 'auto',
     gridGap: ['40px 0', null, '45px 30px', null, '60px 30px', '50px 90px'],
     gridTemplateColumns: [

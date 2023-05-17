@@ -8,7 +8,6 @@ import Banner from '../sections/banner';
 import Cifespod from '../sections/cifespod';
 import Festival from '../sections/festival';
 import TestimonialCard from '../sections/testimonial';
-// import Subscribe from '../sections/subscribe';
 import PhotoCarousel from 'sections/photo-carousel';
 
 export default function IndexPage() {
@@ -22,7 +21,6 @@ export default function IndexPage() {
           <Cifespod />
           <Festival />
           <TestimonialCard />
-          {/* <Subscribe /> */}
         </Layout>
       </StickyProvider>
     </ThemeProvider>

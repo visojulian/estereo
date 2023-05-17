@@ -15,7 +15,7 @@ export default function NosotrosBanner() {
             Estéreo, más que un evento
           </Heading>
           <Text as="p" variant="heroSecondary">
-            Estéreo fue el <strong>primer</strong> festival de podcasts que se realizó en Argentina, los dias 17, 18 y 19 de Noviembre de 2022; con la participacion de mas de <strong>3.000 personas</strong> en más de <strong>5 sedes</strong> de lugares emblemáticos de la ciudad de Rosario como: cine El Cairo, Plataforma Lavardén, Biblioteca Nacional Argentina y el Centro de Expresiones Contemporáneas.
+            Estéreo fue el <strong>primer</strong> festival de podcasts que se realizó en Argentina, los días 17, 18 y 19 de Noviembre de 2022; con la participación de más de <strong>3.000 personas</strong> en más de <strong>5 sedes</strong> de lugares emblemáticos de la ciudad de Rosario como: cine El Cairo, Plataforma Lavardén, Biblioteca Nacional Argentina y el Centro de Expresiones Contemporáneas.
           </Text>
           <TextFeature title="¿Por qué podcast?" />
           <Text as="p" variant="heroSecondary">
@@ -31,7 +31,7 @@ export default function NosotrosBanner() {
 
 const styles = {
   banner: {
-    pt: ['120px', '125px', '135px', '90px', null, null, '105px', '165px'],
+    pt: ['120px', '125px', '135px', '110px', null, null, '135px', '175px'],
     pb: [2, null, 0, null, 2, 0, null, 8],
     position: 'relative',
     zIndex: 2,

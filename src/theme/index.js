@@ -35,13 +35,13 @@ export default {
     '1620px',
   ],
   fonts: {
-    body: "'DM Sans', sans-serif",
-    heading: "'DM Sans', sans-serif",
+    body: "'Kanit', sans-serif",
+    heading: "'Chakra Petch', sans-serif",
   },
   fontSizes: [12, 15, 16, 18, 20, 22, 24, 28, 32, 36, 42, 48, 52, 64],
   fontWeights: {
     body: 'normal',
-    heading: 500,
+    heading: 700,
     bold: 700,
   },
   lineHeights: {
@@ -173,6 +173,22 @@ export default {
       px: [0, null, 5, 6, null, 8, 9],
       color: 'heading',
     },
+    heroThird: {
+      color: 'heading',
+      fontSize: [
+        '24px',
+        '28px',
+        '36px',
+        '32px',
+        '36px',
+        '38px',
+        '40px',
+        '50px',
+      ],
+      lineHeight: [1.3, null, null, null, null, 1.2],
+      fontWeight: 700,
+      mb: [4, null, null, null, null, 5],
+    },
     title: {
       // extends the text.heading styles
       variant: 'text.heading',
@@ -183,7 +199,7 @@ export default {
     },
     lead: {
       fontSize: 40,
-      fontFamily: 'DM Sans',
+      fontFamily: 'body',
       fontWeight: '500',
       lineHeight: '60px',
       letterSpacing: '-1.5px',
@@ -250,11 +266,12 @@ export default {
       fontSize: ['14px', null, null, 2],
       letterSpacings: '-0.15px',
       padding: ['12px 20px', null, '15px 30px'],
-      fontFamily: 'body',
+      fontFamily: 'heading',
       cursor: 'pointer',
       lineHeight: 1.2,
       transition: 'all 0.25s',
-      fontWeight: 500,
+      fontWeight: 700,
+      letterSpacing: 1,
       '&:focus': {
         outline: 0,
       },

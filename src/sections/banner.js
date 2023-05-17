@@ -11,7 +11,7 @@ export default function Banner() {
       <Container sx={styles.banner.container}>
         <Box sx={styles.banner.contentBox}>
           <Heading as="h1" variant="heroPrimary">
-            6, 7 y 8 de Octubre de 2023
+            <span sx={{ letterSpacing: '10px' }}>6.7.8</span> DE OCTUBRE
           </Heading>
           <Text as="p" variant="heroSecondary">
             Realizado en la ciudad de Rosario, Argentina Estéreo busca unir a creadores y oyentes en un mismo espacio. Brindando formaciones, conversatorios y shows gratuitos. Es el primer festival de podcast que se realiza en país.
