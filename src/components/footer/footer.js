@@ -148,6 +148,8 @@ const styles = {
   },
   logoFooter: {
     width: '40%',
+    objectFit: 'contain',
+    mb: 'auto',
   },
   mainSponsor: {
     width: '80%',

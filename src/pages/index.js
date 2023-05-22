@@ -8,7 +8,7 @@ import Banner from '../sections/banner';
 import Cifespod from '../sections/cifespod';
 import Festival from '../sections/festival';
 import TestimonialCard from '../sections/testimonial';
-import PhotoCarousel from 'sections/photo-carousel';
+// import PhotoCarousel from 'sections/photo-carousel';
 
 export default function IndexPage() {
   return (
@@ -17,7 +17,7 @@ export default function IndexPage() {
         <Layout>
           <SEO title="Festival Estereo" />
           <Banner />
-          <PhotoCarousel />
+          {/* <PhotoCarousel /> */}
           <Cifespod />
           <Festival />
           <TestimonialCard />
