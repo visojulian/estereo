@@ -17,7 +17,7 @@ export default function Logo({ src, ...rest }) {
     >
       <Box sx={styles.logoGroup}>
         <Image sx={styles.logo} src={src} alt="estereo landing logo" />
-        <Image src={Cifespod} alt="cifespod logo" />
+        <Image src={Cifespod} sx={styles.cifespod} alt="cifespod logo" />
       </Box>
     </Link>
   );
@@ -31,5 +31,8 @@ const styles = {
   },
   logo: {
     mr: 3,
+  },
+  cifespod: {
+    minHeight: '100%',
   },
 };

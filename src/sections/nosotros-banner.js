@@ -22,7 +22,7 @@ export default function NosotrosBanner() {
             Es una industria que se encuentra en auge tanto en Latinoamérica como en Estados Unidos y Europa. Las cualidades innovadoras del formato permite su adaptación a las necesidades de consumos on demand sobre tópicos de nicho de las audiencias actuales.
             Este contexto facilita un presente de expansión tanto en calidad, géneros y público.
           </Text>
-          <Image src={Nosotros} sx={styles.image} />
+          <Image src={Nosotros} />
         </Box>
       </Container>
     </section>
@@ -74,7 +74,7 @@ const styles = {
       mb: ['40px', null, null, null, null, 7],
     },
   },
-  image: {
-    height: '100%',
-  },
+  // image: {
+  //   height: '100%',
+  // },
 };
