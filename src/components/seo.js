@@ -6,11 +6,16 @@ export default function SEO({
   author = 'Julian Viso',
   meta,
   title = 'festival estereo landing title',
+  width = 'width=device-width',
 }) {
   const metaData = [
     {
       name: `description`,
       content: description,
+    },
+    {
+      name: `viewport`,
+      content: width,
     },
     {
       property: `og:title`,
