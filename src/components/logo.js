@@ -34,5 +34,7 @@ const styles = {
   },
   cifespod: {
     aspectRatio: '1/1',
+    maxHeight: '40px',
+    maxWidth: '40px',
   },
 };
