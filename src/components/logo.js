@@ -33,6 +33,6 @@ const styles = {
     mr: 3,
   },
   cifespod: {
-    minHeight: '100%',
+    aspectRatio: '1/1',
   },
 };
