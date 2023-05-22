@@ -98,6 +98,7 @@ const styles = {
       textAlign: 'center',
       flexDirection: 'column',
       alignItems: 'center',
+      justifyContent: 'center',
     },
     menus: {
       mt: [3, 4],
@@ -147,7 +148,6 @@ const styles = {
   },
   logoFooter: {
     width: '40%',
-    my: 'auto',
   },
   mainSponsor: {
     width: '80%',
