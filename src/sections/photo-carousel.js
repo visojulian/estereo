@@ -1,4 +1,5 @@
 /** @jsx jsx */
+"use client";
 import { jsx, Container, Box, Image, Button } from 'theme-ui';
 import SectionHeader from 'components/section-header';
 import Carousel from 'react-multi-carousel';
@@ -50,13 +51,12 @@ export default function PhotoCarousel() {
         <Carousel
           additionalTransfrom={0}
           arrows={false}
-          autoPlay
-          autoPlaySpeed={3000}
           centerMode={false}
           className=""
           containerClass="carousel-container"
           customButtonGroup={<ButtonGroup />}
           dotListClass=""
+          draggable
           focusOnSelect={false}
           infinite={true}
           itemClass=""
@@ -69,7 +69,7 @@ export default function PhotoCarousel() {
           sliderClass=""
           slidesToSlide={1}
         >
-          {gallery.map((item, i) => (
+          {gallery.slice(0, 9).map((item, i) => (
             item && (
               <Box key={i}>
                 <div sx={styles.image}>

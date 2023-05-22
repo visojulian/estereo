@@ -39,7 +39,6 @@ export default function TestimonialCard() {
         <Carousel
           additionalTransfrom={0}
           arrows={false}
-          autoPlaySpeed={3000}
           centerMode={false}
           className=""
           containerClass="carousel-container"
