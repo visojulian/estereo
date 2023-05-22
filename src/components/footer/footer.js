@@ -36,7 +36,7 @@ export default function Footer() {
         <Box sx={styles.footer.footerBottomArea}>
           <Box sx={styles.logoGroup}>
             <Image src={LogoDark} sx={styles.logoFooter} />
-            <Box>
+            <Box sx={styles.logoGroup.cifespodGroup}>
               <Image src={Cifespod} sx={styles.logoGroup.cifespod} />
               <Text sx={styles.logoGroup.cifespodText}>
                 <strong>
@@ -75,14 +75,17 @@ const styles = {
       '@media screen and (min-width: 1024px)': {
         width: '147px',
       },
-      ml: 3,
     },
     cifespodText: {
       fontSize: '12px',
       '@media screen and (min-width: 1024px)': {
         fontSize: '14px',
       },
-      ml: 3,
+    },
+    cifespodGroup: {
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
     },
   },
   footer: {
