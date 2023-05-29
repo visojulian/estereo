@@ -10,6 +10,7 @@ export default function Banner() {
     <section sx={styles.banner} id="home">
       <Container sx={styles.banner.container}>
         <Box sx={styles.banner.contentBox}>
+          <Heading as="h3">EDICIÓN 2023</Heading>
           <Heading as="h1" variant="heroPrimary">
             <span sx={{ letterSpacing: '10px' }}>6.7.8</span> DE OCTUBRE
           </Heading>
