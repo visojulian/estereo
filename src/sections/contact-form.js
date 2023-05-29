@@ -15,7 +15,6 @@ export default function Form() {
 
   const onSubmit = (data) => {
     recaptchaRef.current.execute();
-    sendMail(data);
   }
 
   const sendMail = async (data) => {
@@ -25,6 +24,7 @@ export default function Form() {
         fullname: data.fullname,
         subject: data.subject,
         message: data.message,
+        captcha: captchaCode,
       }),
       headers: {
         "Content-Type": "application/json",
@@ -47,7 +47,7 @@ export default function Form() {
     }
     // Else reCAPTCHA was executed successfully so proceed with the
     // alert
-    alert(`Hey, ${email}`);
+    sendMail(data);
     // Reset the reCAPTCHA so that it can be executed again if user
     // submits another email.
     recaptchaRef.current.reset();
