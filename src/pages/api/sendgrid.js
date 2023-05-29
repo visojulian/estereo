@@ -8,7 +8,7 @@ async function sendEmail(req, res) {
     await sendgrid.send({
       to: 'festivalestereorosario@gmail.com',
       from: 'hola@festivalestereo.com.ar',
-      subject: `${req.body.subject}`,
+      subject: `Nueva consulta web: ${req.body.subject}`,
       html: `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
       <html lang="es">
       <head>
@@ -22,13 +22,15 @@ async function sendEmail(req, res) {
         <div style="display: flex;justify-content: center;align-items: center;border-radius: 5px;overflow: hidden;       font-family: 'helvetica', 'ui-sans';">
         </div>
         <div style="margin-left: 20px;margin-right: 20px;">
-        <h3>Llegó un nuevo correo de: ${req.body.fullname}, responder a: ✉️${req.body.email} </h3>
+        <h3>Llegó un nuevo correo de: ${req.body.fullname}</h3>
+        <br>
+        Responder a: ✉️${req.body.email} </h3>
         <div style="font-size: 16px;">
         <p>Mensaje:</p>
         <p>${req.body.message}</p>
         <br>
         </div>
-        <p style="font-size: 16px;padding-bottom: 20px;border-bottom: 1px solid #D1D5DB;">Este correo llega a ustedes gracia Juli Viso</p>
+        <p style="font-size: 16px;padding-bottom: 20px;border-bottom: 1px solid #D1D5DB;">Este correo llega a ustedes gracias a la genialidad de Juli Viso</p>
         </div>
       </body>
       </html>`,

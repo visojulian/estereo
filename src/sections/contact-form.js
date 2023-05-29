@@ -7,11 +7,18 @@ import {
 } from 'theme-ui';
 
 import { useForm } from 'react-hook-form';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 export default function Form() {
   const { register, handleSubmit } = useForm();
+  const recaptchaRef = React.createRef();
 
-  const onSubmit = async (data) => {
+  const onSubmit = (data) => {
+    recaptchaRef.current.execute();
+    sendMail(data);
+  }
+
+  const sendMail = async (data) => {
     const res = await fetch("/api/sendgrid", {
       body: JSON.stringify({
         email: data.email,
@@ -32,10 +39,30 @@ export default function Form() {
     }
   };
 
+  const onReCAPTCHAChange = (captchaCode) => {
+    // If the reCAPTCHA code is null or undefined indicating that
+    // the reCAPTCHA was expired then return early
+    if (!captchaCode) {
+      return;
+    }
+    // Else reCAPTCHA was executed successfully so proceed with the
+    // alert
+    alert(`Hey, ${email}`);
+    // Reset the reCAPTCHA so that it can be executed again if user
+    // submits another email.
+    recaptchaRef.current.reset();
+  }
+
   return (
     <section>
       <Container sx={{ pt: "120px" }}>
         <form onSubmit={handleSubmit(onSubmit)}>
+          <ReCAPTCHA
+            ref={recaptchaRef}
+            size="invisible"
+            sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
+            onChange={onReCAPTCHAChange}
+          />
           <Label htmlFor="name">Tu nombre:</Label>
           <Input {...register("fullname")} />
           <Label htmlFor="email">Tu correo:</Label>
