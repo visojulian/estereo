@@ -11,4 +11,8 @@ export default [
     path: 'nosotros',
     label: 'Nosotros',
   },
+  {
+    path: 'contacto',
+    label: 'Contacto',
+  },
 ];

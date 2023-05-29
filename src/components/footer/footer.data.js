@@ -61,6 +61,10 @@ export default {
       label: 'Partners',
     },
     {
+      path: 'contacto',
+      label: 'Contacto',
+    },
+    {
       path: '/2022',
       label: '2022',
     },

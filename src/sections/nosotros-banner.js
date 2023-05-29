@@ -4,7 +4,7 @@ import { Container, Box, Heading, Text, Image } from 'theme-ui';
 import ShapeLeft from 'assets/shape-left.png';
 import ShapeRight from 'assets/shape-right.png';
 import TextFeature from 'components/text-feature';
-import Nosotros from 'assets/team/nosotros.png'
+import Nosotros from 'assets/team/nosotros.png';
 
 export default function NosotrosBanner() {
   return (
