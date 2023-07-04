@@ -12,7 +12,7 @@ export default function Nosotros() {
     <ThemeProvider theme={theme}>
       <StickyProvider>
         <Layout>
-          <SEO title="Festival Estereo" />
+          <SEO title="Estéreo: Festival de Podcast" />
           <NosotrosBanner />
           <TeamSection />
         </Layout>

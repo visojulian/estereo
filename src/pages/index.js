@@ -15,7 +15,7 @@ export default function IndexPage() {
     <ThemeProvider theme={theme}>
       <StickyProvider>
         <Layout>
-          <SEO title="Festival Estereo" />
+          <SEO title="Estéreo: Festival de Podcast" />
           <Banner />
           <PhotoCarousel />
           <Cifespod />

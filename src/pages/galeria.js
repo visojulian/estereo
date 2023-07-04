@@ -18,7 +18,7 @@ export default function Galeria() {
     <ThemeProvider theme={theme}>
       <StickyProvider>
         <Layout>
-          <SEO title="Festival Estereo" />
+          <SEO title="Estéreo: Festival de Podcast" />
           <Box sx={styles.gallery} >
             <Gallery show={show} setIsComplete={setIsComplete} />
           </Box>

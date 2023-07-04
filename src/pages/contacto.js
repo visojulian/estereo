@@ -8,13 +8,11 @@ import Form from 'sections/contact-form';
 
 
 export default function Festival() {
-  const galleryImgs = 6;
-
   return (
     <ThemeProvider theme={theme}>
       <StickyProvider>
         <Layout>
-          <SEO title="Festival Estereo" />
+          <SEO title="Estéreo: Festival de Podcast" />
           <Form />
         </Layout>
       </StickyProvider>

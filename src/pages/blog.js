@@ -11,7 +11,7 @@ export default function Festival() {
     <ThemeProvider theme={theme}>
       <StickyProvider>
         <Layout>
-          <SEO title="Festival Estereo" />
+          <SEO title="Estéreo: Festival de Podcast" />
           <Container>
             <BlogSection />
           </Container>
