@@ -1,9 +1,5 @@
 /** @jsx jsx */
-import { jsx, Button, ThemeProvider, Box } from 'theme-ui';
-import theme from 'theme';
-import SEO from 'components/seo';
-import { StickyProvider } from '../contexts/app/app.provider';
-import { Link } from 'components/link';
+import { jsx, Button, Box } from 'theme-ui';
 import Background from 'assets/landing/background.png';
 import Escenario from 'assets/landing/escenario.svg';
 import CortinasLeft from 'assets/landing/cortinas-left.svg';
@@ -16,33 +12,31 @@ import Lugar from 'assets/landing/lugar.svg';
 import Logo from 'assets/landing/logo.svg';
 import Mesa from 'assets/landing/mesa.svg';
 import Cifespod from 'assets/landing/cifespod.svg';
+import { Link } from './link';
 
 export default function Landing() {
+
   return (
-    <ThemeProvider theme={theme}>
-      <StickyProvider>
-        <SEO title="Estéreo: Festival de Podcast" />
-        <section sx={styles.background}>
-          <Box sx={styles.escenario}></Box>
-          <Box sx={styles.starsLeft}></Box>
-          <Box sx={styles.starsRight}></Box>
-          <Box sx={styles.cortinasLeft}></Box>
-          <Box sx={styles.cortinasRight}></Box>
-          <Box sx={styles.edicion}></Box>
-          <Box sx={styles.fecha}></Box>
-          <Box sx={styles.lugar}></Box>
-          <Box sx={styles.logo}></Box>
-          <Box sx={styles.mesa}></Box>
-          <Box sx={styles.cifespod}></Box>
-          <Box sx={styles.landing}>
-            <Link
-              path="/">
-              <Button sx={styles.button}>Acceder</Button>
-            </Link>
-          </Box>
-        </section>
-      </StickyProvider>
-    </ThemeProvider >
+    <section sx={styles.background}>
+      <Box sx={styles.escenario}></Box>
+      <Box sx={styles.starsLeft}></Box>
+      <Box sx={styles.starsRight}></Box>
+      <Box sx={styles.cortinasLeft}></Box>
+      <Box sx={styles.cortinasRight}></Box>
+      <Box sx={styles.edicion}></Box>
+      <Box sx={styles.fecha}></Box>
+      <Box sx={styles.lugar}></Box>
+      <Box sx={styles.logo}></Box>
+      <Box sx={styles.mesa}></Box>
+      <Box sx={styles.cifespod}></Box>
+      <Box sx={styles.landing}>
+        <Link path="/home">
+          <Button sx={styles.button}>
+            Acceder
+          </Button>
+        </Link>
+      </Box>
+    </section>
   );
 }
 

@@ -49,7 +49,7 @@ export default {
   ],
   menuItem: [
     {
-      path: '/',
+      path: '/home',
       label: 'Home',
     },
     {
