@@ -9,7 +9,6 @@ import 'typeface-dm-sans';
 export default function CustomApp({ Component, pageProps }) {
   useEffect(() => {
     initGA();
-    logPageView();
     Router.events.on('routeChangeComplete', logPageView);
   }, []);
 
