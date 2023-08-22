@@ -13,7 +13,6 @@ import {
 import { useForm } from 'react-hook-form';
 import ReCAPTCHA from 'react-google-recaptcha';
 import { useState } from 'react';
-import Nosotros from 'assets/team/nosotros.png'
 
 export default function Form() {
   const [data, setData] = useState();
@@ -58,12 +57,9 @@ export default function Form() {
 
   return (
     <section>
-      <Container sx={{ pt: "120px" }}>
-        <Heading as="h2">¡Hablá con Estéreo!</Heading>
+      <Container sx={styles.formContainer}>
+        <Heading as="h1" sx={styles.title}>¡Hablá con Estéreo!</Heading>
         <Flex>
-          <Box sx={styles.imgBox}>
-            <Image src={Nosotros} sx={styles.img} />
-          </Box>
           <Box sx={styles.box}>
             <form sx={styles.form} onSubmit={handleSubmit(onSubmit)}>
               <ReCAPTCHA
@@ -92,19 +88,16 @@ export default function Form() {
 };
 
 const styles = {
-  imgBox: {
-    mx: 1,
-    width: '50%',
-    my: 'auto',
-    display: [
-      'none',
-      'none',
-      'none',
-      'none',
-      'block',
-      'block',
-      'block',
-    ],
+  formContainer: {
+    pt: "120px",
+    minHeight: "80vh",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+  },
+  title: {
+    fontSize: '3em',
+    mb: '2rem'
   },
   box: {
     mx: 1,
@@ -113,9 +106,9 @@ const styles = {
       '100%',
       '100%',
       '100%',
-      '50%',
-      '50%',
-      '50%',
+      '100%',
+      '100%',
+      '100%',
     ],
   },
   input: {
@@ -129,5 +122,5 @@ const styles = {
   },
   button: {
     mt: 4,
-  }
+  },
 };
