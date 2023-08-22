@@ -11,6 +11,8 @@ import Member3 from 'assets/team/member-3.png';
 import Member4 from 'assets/team/member-4.png';
 import Member5 from 'assets/team/member-5.png';
 import Member6 from 'assets/team/member-6.png';
+import Member7 from 'assets/team/member-7.png';
+import Member8 from 'assets/team/member-8.png';
 
 const data = [
   {
@@ -149,55 +151,31 @@ const data = [
 const colaboradores = [
   {
     id: 1,
-    imgSrc: Member1,
-    altText: 'Federico Rusconi',
-    title: 'Federico Rusconi',
-    designation: 'Director de Alianzas',
+    imgSrc: Member7,
+    altText: 'Jessica Paola Rey',
+    title: 'Jessica Paola Rey',
+    designation: 'Producción',
     socialProfile: [
       {
         id: 1,
         name: 'linkedin',
-        path: 'https://www.linkedin.com/in/frusconi/',
+        path: 'https://www.linkedin.com/in/jessica-p-rey/',
         icon: <FaLinkedinIn />,
-      },
-      {
-        id: 2,
-        name: 'twitter',
-        path: 'https://twitter.com/el_dudux',
-        icon: <FaTwitter />,
-      },
-      {
-        id: 3,
-        name: 'instagram',
-        path: 'https://instagram.com/el_dudux',
-        icon: <FaInstagram />,
       },
     ],
   },
   {
     id: 2,
-    imgSrc: Member2,
-    altText: 'Martín Parodi',
-    title: 'Martín Parodi',
-    designation: 'Director General',
+    imgSrc: Member8,
+    altText: 'Florencia Verna',
+    title: 'Florencia Verna',
+    designation: 'Comercial',
     socialProfile: [
       {
         id: 1,
         name: 'linkedin',
-        path: 'https://ar.linkedin.com/in/mart%C3%ADn-parodi-441a64ba',
+        path: 'https://www.linkedin.com/in/flor-verna/',
         icon: <FaLinkedinIn />,
-      },
-      {
-        id: 2,
-        name: 'twitter',
-        path: 'https://twitter.com/martinparolax',
-        icon: <FaTwitter />,
-      },
-      {
-        id: 3,
-        name: 'instagram',
-        path: 'https://www.instagram.com/martinparola',
-        icon: <FaInstagram />,
       },
     ]
   },
@@ -224,7 +202,7 @@ export default function TeamSection() {
             />
           ))}
         </Grid>
-        {/* <SectionHeader
+        <SectionHeader
           title="Colaboradoras"
         />
 
@@ -239,7 +217,7 @@ export default function TeamSection() {
               social={item.socialProfile}
             />
           ))}
-        </Grid> */}
+        </Grid>
       </Container>
     </section>
   );
