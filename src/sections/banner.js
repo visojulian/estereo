@@ -2,6 +2,7 @@
 import { jsx } from 'theme-ui';
 import { Container, Box, Heading, Text, Embed, Button } from 'theme-ui';
 import ShapeLeft from 'assets/shape-left.png';
+import Link from 'next/link';
 import ShapeRight from 'assets/shape-right.png';
 const BannerVid = "https://www.youtube.com/embed/65rqGWf93AU";
 
@@ -17,7 +18,15 @@ export default function Banner() {
           <Text as="p" variant="heroSecondary">
             Realizado en la ciudad de Rosario, Argentina Estéreo busca unir a creadores y oyentes en un mismo espacio. Brindando formaciones, conversatorios y shows gratuitos. Es el primer festival de podcast que se realiza en país.
           </Text>
-          <Button variant="primary">Participar</Button>
+          <Link
+            href={'/festival'}
+            spy={true}
+            smooth={true}
+          >
+            <Button variant="primary">
+              Participar
+            </Button>
+          </Link>
         </Box>
 
         <Box sx={styles.banner.imageBox}>
