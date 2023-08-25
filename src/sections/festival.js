@@ -27,7 +27,7 @@ const data = [
       'Pensar y debatir el futuro de la industria es uno de los ejes principales del festival. Alrededor de 50 profesionales del podcast se sentaron en nuestras mesas de charlas abiertas.',
   },
   {
-    id: "3k",
+    id: "+7k",
     title: 'Networking',
     text:
       'Logramos desbordar la esencia digital del podcast, para decubrir la inmensa industria detrás de su existencia. Un total de 3000 personas pasaron por Estéreo en su primer edición',
