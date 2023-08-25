@@ -279,7 +279,17 @@ export default {
     primary: {
       variant: 'buttons.defaultBtn',
       color: 'white',
+      border: '2px solid',
+      borderColor: 'transparent',
       bg: 'primary',
+      '&:hover': {
+        boxShadow: 'rgba(233, 76, 84, 0.57) 0px 9px 20px -5px',
+      },
+    },
+    third: {
+      variant: 'buttons.defaultBtn',
+      color: 'white',
+      bg: 'secondary',
       '&:hover': {
         boxShadow: 'rgba(233, 76, 84, 0.57) 0px 9px 20px -5px',
       },
@@ -296,6 +306,7 @@ export default {
       variant: 'buttons.defaultBtn',
       border: '2px solid',
       borderColor: 'primary',
+      boxSizing: 'boder-box',
       color: 'primary',
       bg: 'transparent',
       padding: ['10px 15px', null, '15px 30px'],

@@ -8,6 +8,10 @@ export default [
     label: 'Festival',
   },
   {
+    path: 'convocatorias',
+    label: 'Convocatorias',
+  },
+  {
     path: 'nosotros',
     label: 'Nosotros',
   },

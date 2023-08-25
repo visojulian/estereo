@@ -27,6 +27,15 @@ export default function Banner() {
               Participar
             </Button>
           </Link>
+          <Link
+            href={'/convocatorias'}
+            spy={true}
+            smooth={true}
+          >
+            <Button sx={{ ml: 3 }} variant="secondary">
+              Convocatorias
+            </Button>
+          </Link>
         </Box>
 
         <Box sx={styles.banner.imageBox}>
