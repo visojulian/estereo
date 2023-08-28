@@ -45,7 +45,7 @@ export default function ConvocatoriasBanner() {
               Inscripción
             </Button>
           </Link>
-          {/* <hr sx={{ mt: 5, mb: 6 }} />
+          <hr sx={{ mt: 5, mb: 6 }} />
           <Heading as="h3" variant="heroThird">
             Showcase de Podcast
           </Heading>
@@ -73,7 +73,7 @@ export default function ConvocatoriasBanner() {
             <Button variant="primary">
               Inscripción
             </Button>
-          </Link> */}
+          </Link>
         </Box>
       </Container>
     </section>

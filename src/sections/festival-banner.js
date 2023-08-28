@@ -18,12 +18,12 @@ export default function FestivalBanner() {
             ROSARIO, ARGENTINA
           </Heading>
           <Text as="p" variant="heroSecondary">
-            Muy pronto, en esta sección vas a poder encontrar toda la información sobre la edición de este año.
+            Muy pronto, en esta sección vas a poder encontrar toda la información <br /> sobre la edición de este año.
             <br />
             ¿Cómo participar? ¿Dónde ir? ¿Qué actividades hay?
           </Text>
           <Text as="p" variant="heroSecondary">
-            Seguimos trabajando para darle a toda comunidad podcastera, el festival que se merece.
+            Seguimos trabajando para darle a toda comunidad podcastera,<br /> el festival que se merece.
             <br />
             ¡Gracias por apoyarnos!
           </Text>

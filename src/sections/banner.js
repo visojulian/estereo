@@ -4,20 +4,23 @@ import { Container, Box, Heading, Text, Embed, Button } from 'theme-ui';
 import ShapeLeft from 'assets/shape-left.png';
 import Link from 'next/link';
 import ShapeRight from 'assets/shape-right.png';
-const BannerVid = "https://www.youtube.com/embed/65rqGWf93AU";
+// const BannerVid = "https://www.youtube.com/embed/65rqGWf93AU";
+const BannerVid = "https://player.cloudinary.com/embed/?public_id=festiestereo&cloud_name=festivalestereo&player[seekThumbnails]=false&player[hideContextMenu]=true&player[floatingWhenNotVisible]=false&player[posterOptions][transformation][startOffset]=11";
 
 export default function Banner() {
   return (
     <section sx={styles.banner} id="home">
       <Container sx={styles.banner.container}>
         <Box sx={styles.banner.contentBox}>
-          <Heading as="h3">EDICIÓN 2023</Heading>
-          <Heading as="h1" variant="heroPrimary">
-            <span sx={{ letterSpacing: '10px' }}>6.7.8 </span>DE OCTUBRE
-          </Heading>
-          <Text as="p" variant="heroSecondary">
-            Realizado en la ciudad de Rosario, Argentina Estéreo busca unir a creadores y oyentes en un mismo espacio. Brindando formaciones, conversatorios y shows gratuitos. Es el primer festival de podcast que se realiza en país.
-          </Text>
+          <Box sx={styles.banner.text}>
+            <Heading as="h3">EDICIÓN 2023</Heading>
+            <Heading as="h1" variant="heroPrimary">
+              <span sx={{ letterSpacing: '10px' }}>6.7.8 </span>DE OCTUBRE
+            </Heading>
+            <Text as="p" variant="heroSecondary">
+              Realizado en la ciudad de Rosario, Argentina <br /> Estéreo busca unir a creadores y oyentes en un mismo espacio. Brindando formaciones, conversatorios y shows gratuitos. Es el primer festival de podcast que se realiza en país.
+            </Text>
+          </Box>
           <Link
             href={'/festival'}
             spy={true}
@@ -39,7 +42,13 @@ export default function Banner() {
         </Box>
 
         <Box sx={styles.banner.imageBox}>
-          <Embed src={BannerVid} alt="banner" />
+          <Embed
+            src={BannerVid}
+            alt="banner"
+            style={{ height: 'auto', width: '100%', aspectRatio: 16 / 9 }}
+            allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+            frameBorder="0"
+          />
         </Box>
       </Container>
     </section>
@@ -85,17 +94,25 @@ const styles = {
       justifyContent: 'center',
     },
     contentBox: {
-      width: ['100%', '90%', '535px', null, '57%', '60%', '68%', '60%'],
+      width: '100%',
       mx: 'auto',
       textAlign: 'center',
       mb: ['40px', null, null, null, null, 7],
     },
+    text: {
+      display: 'flex',
+      alignItems: 'center',
+      flexDirection: 'column',
+      m: '0 auto',
+      width: '70%'
+    },
     imageBox: {
       justifyContent: 'center',
+      width: '100%',
       textAlign: 'center',
       display: 'inline-flex',
       mb: [0, null, -6, null, null, '-40px', null, -3],
-      img: {
+      video: {
         position: 'relative',
         height: [245, 'auto'],
       },

@@ -10,7 +10,6 @@ import {
 import TextFeature from 'components/text-feature';
 
 import MapaCifespod from 'assets/cifespod.svg';
-import shapePattern from 'assets/shape-pattern1.png';
 
 const data = {
   subTitle: 'CIFESPOD 2023',
@@ -23,9 +22,6 @@ export default function Cifespod() {
       <Container sx={styles.containerBox}>
         <Box sx={styles.thumbnail}>
           <Image src={MapaCifespod} alt="Mapa cifespod" />
-          <Box sx={styles.shapeBox}>
-            <Image src={shapePattern} alt="Shape" />
-          </Box>
         </Box>
         <Box sx={styles.contentBox}>
           <TextFeature subTitle={data.subTitle} title={data.title} />
@@ -44,10 +40,11 @@ export default function Cifespod() {
 const styles = {
   containerBox: {
     display: 'flex',
-    alignItems: ['flex-start', null, null, 'center'],
+    alignItems: ['flex-start', null, null, 'flex-start'],
     justifyContent: ['flex-start', null, null, 'space-between'],
     flexDirection: ['column', null, null, 'row'],
     pb: [0, null, null, null, null, 7],
+    pt: [0, null, null, null, null, 8],
   },
   thumbnail: {
     mr: ['auto', null, null, 6, 60, 85],
@@ -60,13 +57,6 @@ const styles = {
       zIndex: 1,
       height: [310, 'auto'],
     },
-  },
-  shapeBox: {
-    position: 'absolute',
-    bottom: -68,
-    left: -160,
-    zIndex: -1,
-    display: ['none', null, null, null, null, 'inline-block'],
   },
   contentBox: {
     width: ['100%', null, null, 315, 390, 450, null, 500],
