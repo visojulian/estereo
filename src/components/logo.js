@@ -38,9 +38,9 @@ const styles = {
   cifespodIcon: {
     display: 'flex',
     alignItems: 'center',
+    width: ['15vw', '10vw', '10vw', '7vw', '5vw', '3vw'],
   },
   cifespod: {
-    width: '30%',
     height: '30%',
   },
 };
