@@ -5,6 +5,7 @@ import ShapeLeft from 'assets/shape-left.png';
 import ShapeRight from 'assets/shape-right.png';
 import maraton from 'assets/convocatorias/maraton.jpg';
 import showcase from 'assets/convocatorias/showcases.jpg';
+import voluntarios from 'assets/convocatorias/voluntarios.jpg';
 import { Link } from 'components/link';
 
 export default function ConvocatoriasBanner() {
@@ -74,6 +75,34 @@ export default function ConvocatoriasBanner() {
               Inscripción
             </Button>
           </Link>
+          {/* <hr sx={{ mt: 5, mb: 6 }} />
+          <Heading as="h3" variant="heroThird">
+            Voluntariado
+          </Heading>
+          <Image
+            src={voluntarios}
+            width='auto'
+            height='auto'
+          />
+          <Text as="p" variant="heroSecondary" sx={{ mt: 5 }}>
+            ¡Hola <strong>podcasterx</strong>! Somos el equipo de Festival Estéreo.<br />
+          </Text>
+          <Text as="p" variant="heroSecondary">
+            Para realizar nuestro festival, vamos a necesitar de muchxs voluntarixs que nos ayuden en algunas tareas clave. Si te interesa participar y sumar experiencia, nos encantaría conocerte y sumarte a nuestro equipo.<br />
+          </Text>
+          <Text as="p" variant="heroSecondary">
+            <strong>Para participar, es necesario estar en Rosario, Argentina, alguno de los días del festival.</strong>
+          </Text>
+          <Link
+            path={'https://forms.gle/iaCZtvCwtTbUUjKh8'}
+            spy={true}
+            smooth={true}
+            target='blank'
+          >
+            <Button variant="primary">
+              Inscripción
+            </Button>
+          </Link> */}
         </Box>
       </Container>
     </section>
@@ -111,7 +140,7 @@ const styles = {
       zIndex: -1,
       backgroundImage: `url(${ShapeLeft})`,
       backgroundRepeat: `no-repeat`,
-      backgroundPosition: 'bottom left',
+      backgroundPosition: 'center left',
       backgroundSize: '26%',
     },
     '&::after': {
@@ -124,7 +153,7 @@ const styles = {
       zIndex: -1,
       backgroundImage: `url(${ShapeRight})`,
       backgroundRepeat: `no-repeat`,
-      backgroundPosition: 'bottom right',
+      backgroundPosition: 'center right',
       backgroundSize: '22%',
     },
     container: {
