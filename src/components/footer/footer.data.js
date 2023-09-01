@@ -1,10 +1,14 @@
-import Podimo from 'assets/sponsor/podimo.png';
+import Amnistia from 'assets/sponsor/amnistia.png';
+import Brujula from 'assets/sponsor/brujula.png';
 import SanCristobal from 'assets/sponsor/sancristobal.svg';
 import Hindenburg from 'assets/sponsor/hindenburg.svg';
 import Taragui from 'assets/sponsor/taragui.png';
 import Cima from 'assets/sponsor/cima.png';
+import ImageCampus from 'assets/sponsor/imagecampus.png';
+import Ugr from 'assets/sponsor/ugr.png';
 import Chevallier from 'assets/sponsor/chevallier.png';
-import Sembra from 'assets/sponsor/sembramedia.png';
+import ConcejoMuni from 'assets/sponsor/concejomuni.png';
+import MinCultura from 'assets/sponsor/mincultura.png';
 import Biblioteca from 'assets/sponsor/biblio.png';
 import Cultura from 'assets/sponsor/cultura.png';
 import Diputados from 'assets/sponsor/diputados.png';
@@ -28,15 +32,21 @@ export default {
     //   altText: 'Main Sponsor',
     //   title: 'Main Sponsor',
     // },
-    // {
-    //   id: 2,
-    //   logos: [SanCristobal, Taragui, Cima, Hindenburg, Chevallier, Sembra],
-    //   altText: 'Partner',
-    //   title: 'Partners',
-    // },
+    {
+      id: 1,
+      logos: [Amnistia],
+      altText: 'Amnistía Internacional',
+      title: 'Con el apoyo de',
+    },
+    {
+      id: 2,
+      logos: [SanCristobal, Taragui, Cima, Hindenburg, Chevallier, Brujula, Ugr, ImageCampus],
+      altText: 'Partner',
+      title: 'Partners',
+    },
     {
       id: 3,
-      logos: [Biblioteca, Cultura, Diputados, Galpon, Esc, Cairo, Fomento, Labso, Municipalidad, Unraf],
+      logos: [Biblioteca, Cultura, Diputados, Galpon, Esc, Cairo, Fomento, Labso, Municipalidad, Unraf, MinCultura, ConcejoMuni],
       altText: 'Institución',
       title: 'Instituciones',
     },

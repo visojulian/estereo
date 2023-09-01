@@ -14,6 +14,7 @@ export default function Footer() {
             <Box
               key={`footer-widget--key${item.id}`}
               sx={styles.widgets.widgetItem}
+              id={`i${item.title.toLowerCase()}`}
             >
               <Box sx={styles.widgets.infoWrapper}>
                 <Heading as="h3" sx={styles.widgets.title}>{item.title}</Heading>
@@ -129,18 +130,30 @@ const styles = {
       fontSize: [1, '15px'],
       width: '100%',
     },
+    '#iinstituciones img': {
+      maxWidth: '29%',
+      my: 2,
+      mx: [0, 0, 2]
+    },
+    '#ipartners img': {
+      objectFit: 'contain',
+      maxWidth: ['35%', '30%'],
+      minHeight: '70px !important',
+      my: [0, 0, 4],
+      mx: [0, 0, 2]
+    },
+    '#icomunidades img': {
+      maxWidth: ['35%', '30%'],
+    }
   },
   logoGrid: {
     py: [1, null, 2],
-    width: ['100%', '80%', '100%'],
+    width: ['100%', '80%', '80%'],
     mx: 'auto',
     alignItems: 'center',
-    gridTemplateColumns: [
-      'repeat(2,1fr)',
-      null,
-      'repeat(3,1fr)',
-      'repeat(3,1fr)',
-    ],
+    display: 'flex',
+    justifyContent: 'space-around',
+    flexWrap: 'wrap',
   },
   logo: {
     mx: 'auto',
@@ -152,20 +165,17 @@ const styles = {
     mb: 'auto',
   },
   mainSponsor: {
-    width: '80%',
+    ' img': {
+      width: '40% !important',
+    }
   },
   widgets: {
     py: [4, null, 6],
     px: [4, 0, 3, null, 7, 10],
     width: ['80%', '80%', '100%'],
     mx: 'auto',
-    gridGap: ['40px 0', null, '45px 30px', null, '60px 30px', '50px 90px'],
-    gridTemplateColumns: [
-      'repeat(1,1fr)',
-      null,
-      'repeat(2,1fr)',
-      'repeat(2,1fr)',
-    ],
+    display: 'flex',
+    flexDirection: 'column',
     widgetItem: {
       textAlign: 'center',
     },
