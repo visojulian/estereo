@@ -74,13 +74,13 @@ const styles = {
     cifespod: {
       width: '70px',
       '@media screen and (min-width: 1024px)': {
-        width: '147px',
+        width: '80px',
       },
     },
     cifespodText: {
       fontSize: '12px',
       '@media screen and (min-width: 1024px)': {
-        fontSize: '14px',
+        fontSize: '12px',
       },
     },
     cifespodGroup: {
@@ -162,7 +162,6 @@ const styles = {
   logoFooter: {
     width: '40%',
     objectFit: 'contain',
-    mb: 'auto',
   },
   mainSponsor: {
     ' img': {
