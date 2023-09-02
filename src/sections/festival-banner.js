@@ -72,6 +72,7 @@ const styles = {
     mr: '1px',
     ' img': {
       objectFit: 'cover',
+      minHeight: '18.2vh'
     }
   },
   img: {
@@ -93,9 +94,9 @@ const styles = {
     display: 'flex',
     alignItems: 'flex-end',
     justifyContent: 'flex-end',
-    pb: 6,
-    pr: 8,
-    fontSize: 7,
+    pb: [1, 1, 6],
+    pr: [1, 1, 8],
+    fontSize: [3, 4, 7],
     fontWeight: '600',
     fontFamily: 'Chakra Petch',
     ' :hover': {
