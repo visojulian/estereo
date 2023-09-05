@@ -7,7 +7,6 @@ export default async function sendEmail(req, res) {
 
   // Extract the email and captcha code from the request body
   const { message, fullname, subject, email, captcha } = body;
-  console.log(message);
   if (method === "POST") {
     // If email or captcha are missing return an error
     if (!email || !captcha) {
@@ -68,7 +67,6 @@ export default async function sendEmail(req, res) {
         message: "Unproccesable request, Invalid captcha code",
       });
     } catch (error) {
-      console.log(error);
       return res.status(422).json({ message: "Something went wrong" });
     }
   }

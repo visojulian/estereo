@@ -9,8 +9,11 @@ export default {
     background_secondary: '#F9FBFD', // secondary background color
     border_color: '#E5ECF4', // border color
     yellow: '#EEF166', // border color
-    primary: '#F85532', // primary button and link color
+    primary: '#F85532', // naranja
     secondary: '#D3CCFF', // secondary color - can be used for hover states
+    third: '#14162D', //azul oscuro
+    fourth: '#368DEC', //azul claro
+    fifth: '#368DEC', //azul claro
     muted: '#E4E4E4', // muted color
     accent: '#368DEC', // a contrast color for emphasizing UI
 
