@@ -202,7 +202,7 @@ const cards = [
     title: 'SI VIVÍS EN EL EXTERIOR',
     price: 'Donar ❤️',
     benefits: [
-      'Y aún así apostás por Festival Estéreo, te dejamos un botón de donación para dejes lo que tu ❤️ disponga',
+      'Y aún así apostás por Festival Estéreo, te dejamos un botón de donación para apoyes con lo que tu ❤️ disponga',
     ],
     bgColor: 'white',
     combineColor: 'third',
