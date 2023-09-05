@@ -15,15 +15,15 @@ import menuItems from './header.data';
 const social = [
   {
     path: 'https://www.instagram.com/estereofestival/',
-    icon: <FaInstagram />,
+    icon: <FaInstagram color='#F85532' />,
   },
   {
     path: 'https://twitter.com/EstereoFestival',
-    icon: <FaTwitter />,
+    icon: <FaTwitter color='#F85532' />,
   },
   {
     path: 'https://www.linkedin.com/company/est%C3%A9reo-festival-de-podcast/',
-    icon: <FaLinkedinIn />,
+    icon: <FaLinkedinIn color='#F85532' />,
   },
 ];
 
@@ -144,7 +144,7 @@ const styles = {
       '&:hover': {
         color: 'primary',
       },
-      '&.active': {
+      '&:active': {
         color: 'primary',
       },
     },
@@ -168,11 +168,14 @@ const styles = {
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
-      color: 'primary',
       fontSize: 20,
       mr: '15px',
       transition: 'all 0.25s',
       cursor: 'pointer',
+      svg: {
+        color: 'primary !important',
+
+      },
       ':last-child': {
         mr: '0',
       },

@@ -4,21 +4,19 @@ import { Container, Box, Heading, Text, Embed, Button } from 'theme-ui';
 import ShapeLeft from 'assets/shape-left.png';
 import Link from 'next/link';
 import ShapeRight from 'assets/shape-right.png';
-// const BannerVid = "https://www.youtube.com/embed/65rqGWf93AU";
-const BannerVid = "https://player.cloudinary.com/embed/?public_id=festiestereo&cloud_name=festivalestereo&player[seekThumbnails]=false&player[hideContextMenu]=true&player[floatingWhenNotVisible]=false&player[posterOptions][transformation][startOffset]=11";
 
-export default function Banner() {
+export default function ConvocatoriaHome() {
   return (
-    <section sx={styles.banner} id="home">
+    <section sx={styles.banner}>
       <Container sx={styles.banner.container}>
         <Box sx={styles.banner.contentBox}>
           <Box sx={styles.banner.text}>
             <Heading as="h3">EDICIÓN 2023</Heading>
             <Heading as="h1" variant="heroPrimary">
-              <span sx={{ letterSpacing: '10px' }}>6.7.8 </span>DE OCTUBRE
+              CONVOCATORIAS ABIERTAS
             </Heading>
             <Text as="p" variant="heroSecondary">
-              Realizado en la ciudad de Rosario, Argentina <br /> Estéreo busca unir a creadores y oyentes en un mismo espacio. Brindando formaciones, conversatorios y shows gratuitos. Es el primer festival de podcast que se realiza en país.
+              Si te interesa conocer más sobre el universo podcastero, o ya formás parte de él, podés participar en diferentes convocatorias.<br />Seguimos actualizando esta info cada semana. Podés enterarte de las novedades en nuestras redes.<br />¡Cuidado con las fechas!
             </Text>
           </Box>
           <Link
@@ -26,30 +24,20 @@ export default function Banner() {
             spy={true}
             smooth={true}
           >
-            <Button variant="primary">
-              SABER MÁS
+            <Button sx={{ backgroundColor: 'third' }}>
+              CONVOCATORIAS
             </Button>
           </Link>
         </Box>
-
-        <Box sx={styles.banner.imageBox}>
-          <Embed
-            src={BannerVid}
-            alt="banner"
-            style={{ height: 'auto', width: '100%', aspectRatio: 16 / 9 }}
-            allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
-            frameBorder="0"
-          />
-        </Box>
       </Container>
     </section>
-  );
+  )
 }
 
 const styles = {
   banner: {
-    pt: ['140px', '145px', '155px', '170px', null, null, '180px', '215px'],
-    pb: [2, null, 0, null, 2, 0, null, 5],
+    pt: [5, null, 0, null, 8, 8, 8, 8],
+    pb: [0, null, 0, null, 2, 0, null, 5],
     position: 'relative',
     zIndex: 2,
     '&::before': {
@@ -60,10 +48,6 @@ const styles = {
       height: '100%',
       width: '100%',
       zIndex: -1,
-      backgroundImage: `url(${ShapeLeft})`,
-      backgroundRepeat: `no-repeat`,
-      backgroundPosition: 'bottom left',
-      backgroundSize: '36%',
     },
     '&::after': {
       position: 'absolute',
@@ -73,10 +57,6 @@ const styles = {
       height: '100%',
       width: '100%',
       zIndex: -1,
-      backgroundImage: `url(${ShapeRight})`,
-      backgroundRepeat: `no-repeat`,
-      backgroundPosition: 'bottom right',
-      backgroundSize: '32%',
     },
     container: {
       minHeight: 'inherit',

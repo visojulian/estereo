@@ -1,11 +1,11 @@
 import Amnistia from 'assets/sponsor/amnistia.png';
 import Brujula from 'assets/sponsor/brujula.png';
 import SanCristobal from 'assets/sponsor/sancristobal.svg';
-import Hindenburg from 'assets/sponsor/hindenburg.svg';
+import Hindenburg from 'assets/sponsor/hindenburg.png';
 import Taragui from 'assets/sponsor/taragui.png';
 import Cima from 'assets/sponsor/cima.png';
 import ImageCampus from 'assets/sponsor/imagecampus.png';
-import Ugr from 'assets/sponsor/ugr.png';
+import Ugr from 'assets/sponsor/ugr.svg';
 import Chevallier from 'assets/sponsor/chevallier.png';
 import ConcejoMuni from 'assets/sponsor/concejomuni.png';
 import MinCultura from 'assets/sponsor/mincultura.png';
@@ -74,9 +74,9 @@ export default {
       path: 'contacto',
       label: 'Contacto',
     },
-    {
-      path: '/2022',
-      label: '2022',
-    },
+    // {
+    //   path: '/2022',
+    //   label: '2022',
+    // },
   ],
 };

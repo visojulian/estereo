@@ -9,6 +9,7 @@ import Cifespod from '../sections/cifespod';
 import Festival from '../sections/festival';
 import TestimonialCard from '../sections/testimonial';
 import PhotoCarousel from 'sections/photo-carousel';
+import ConvocatoriaHome from 'sections/convocatoria-home';
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
           <PhotoCarousel />
           <Cifespod />
           <Festival />
+          <ConvocatoriaHome />
           <TestimonialCard />
         </Layout>
       </StickyProvider>
