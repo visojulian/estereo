@@ -17,18 +17,18 @@ export default function ComunidadEstereo() {
       <div sx={styles.cardsContainer}>
         {cards.map((c, idx) => {
           return (
-            <div sx={{ ...styles.card, backgroundColor: c.bgColor }} key={idx}>
+            <div sx={c.bgColor != 'white' ? { ...styles.card, backgroundColor: c.bgColor } : { ...styles.card, backgroundColor: c.bgColor, color: 'third !important', border: '2px solid #14162D' }} key={idx}>
               <div sx={styles.content}>
                 <div sx={{ borderBottom: '3px solid white', }}>{c.title}</div>
-                <ul >
+                <ul>
                   {c.benefits.map((b, i) => {
                     return (
 
-                      <li key={i}><Image src={estrella} />{b}</li>
+                      <li sx={c.bgColor == 'white' && { px: '2em', textTransform: 'none !important' }} key={i}>{c.bgColor != 'white' && <Image src={estrella} />}{b}</li>
                     );
                   })}
                 </ul>
-                <Button sx={styles.button}>
+                <Button sx={c.bgColor != 'white' ? { ...styles.button } : { ...styles.button, border: '2px solid #14162D' }}>
                   <Link
                     target={'_blank'}
                     sx={{ color: 'third', textDecoration: 'none' }}
@@ -196,5 +196,15 @@ const cards = [
     bgColor: 'fourth',
     combineColor: 'third',
     link: 'https://mpago.la/1jzECxL',
+  },
+  {
+    title: 'SI VIVÍS EN EL EXTERIOR',
+    price: 'Donar ❤️',
+    benefits: [
+      'Y aún así apostás por Festival Estéreo, te dejamos un botón de donación para dejes lo que tu ❤️ disponga',
+    ],
+    bgColor: 'white',
+    combineColor: 'third',
+    link: 'https://paypal.me/estereofestival',
   },
 ]
