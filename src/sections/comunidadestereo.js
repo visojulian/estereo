@@ -64,7 +64,8 @@ const styles = {
     flexDirection: 'column',
   },
   logo: {
-    maxWidth: '15%'
+    maxWidth: ['40%', '40%', '30%', '30%', '30%', '20%'],
+    mb: 5,
   },
   title: {
     textTransform: 'uppercase',
