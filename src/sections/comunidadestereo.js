@@ -3,6 +3,7 @@ import { jsx, Image, Box, Heading, Text, Button } from 'theme-ui';
 import React from 'react'
 import Logo from 'assets/logo.svg'
 import estrella from 'assets/estrella.png'
+import estrellaAmarilla from 'assets/estrella_amarilla.png'
 import { Link } from 'components/link';
 
 export default function ComunidadEstereo() {
@@ -24,7 +25,7 @@ export default function ComunidadEstereo() {
                   {c.benefits.map((b, i) => {
                     return (
 
-                      <li sx={c.bgColor == 'white' && { px: '2em', textTransform: 'none !important' }} key={i}>{c.bgColor != 'white' && <Image src={estrella} />}{b}</li>
+                      <li sx={c.bgColor == 'white' && { px: '2em', textTransform: 'none !important' }} key={i}>{c.bgColor != 'white' && (idx === 1 || idx === 4 ? <Image src={estrellaAmarilla} /> : <Image src={estrella} />)}{b}</li>
                     );
                   })}
                 </ul>
