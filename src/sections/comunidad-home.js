@@ -4,18 +4,29 @@ import { Container, Box, Heading, Text, Button } from 'theme-ui';
 import Link from 'next/link';
 
 
-export default function ConvocatoriaHome() {
+export default function ComunidadHome() {
   return (
     <section sx={styles.banner}>
       <Container sx={styles.banner.container}>
         <Box sx={styles.banner.contentBox}>
           <Box sx={styles.banner.text}>
-            <Heading as="h3">EDICIÓN 2023</Heading>
-            <Heading as="h1" variant="heroPrimary">
-              CONVOCATORIAS ABIERTAS
+            <Heading as="h2" sx={{
+              color: 'white',
+              backgroundColor: 'primary',
+              padding: '0 1em',
+              mt: 8,
+              mb: 2,
+              fontSize: ['2em', '4em']
+            }}>
+              COMUNIDAD ESTÉREO
             </Heading>
             <Text as="p" variant="heroSecondary">
-              Si te interesa conocer más sobre el universo podcastero, o ya formás parte de él, podés participar en diferentes convocatorias.<br />Seguimos actualizando esta info cada semana. Podés enterarte de las novedades en nuestras redes.<br />¡Cuidado con las fechas!
+              Colaborá con Estéreo, sumate a nuestra comunidad y recibí regalos 🎁
+              <br />
+              Festival Estéreo es <b>abierto y gratuito</b>.
+              <br />
+              Además de contar con el apoyo de auspiciantes, abrimos la posibilidad (y la billetera 💸) para que vos también puedas colaborar económicamente con Estéreo.
+              <br />
             </Text>
           </Box>
           <Link
@@ -23,8 +34,8 @@ export default function ConvocatoriaHome() {
             spy={true}
             smooth={true}
           >
-            <Button sx={{ backgroundColor: 'third' }}>
-              CONVOCATORIAS
+            <Button sx={styles.button}>
+              COMUNIDAD
             </Button>
           </Link>
         </Box>
@@ -34,6 +45,17 @@ export default function ConvocatoriaHome() {
 }
 
 const styles = {
+  button: {
+    color: 'whithe',
+    backgroundColor: 'fourth',
+    borderRadius: '0.5em',
+    fontSize: '1.2em !important',
+
+    ':hover': {
+      boxShadow: 'none'
+    }
+  },
+
   banner: {
     pt: [5, null, 0, null, 8, 8, 8, 8],
     pb: [0, null, 0, null, 2, 0, null, 5],

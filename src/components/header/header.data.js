@@ -12,6 +12,10 @@ export default [
     label: 'Convocatorias',
   },
   {
+    path: 'comunidad',
+    label: 'Comunidad',
+  },
+  {
     path: 'nosotros',
     label: 'Nosotros',
   },
