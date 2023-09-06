@@ -25,6 +25,7 @@ export default function GraciasLanding() {
         <ul sx={{ textAlign: 'justify', width: '95%' }}>
           <li>Luego de participar deberás comunicarte con nosotros para coordinar la entrega de obsequios.</li>
           <li>Todos los obsequios se entregarán únicamente de manera presencial durante la realización de Festival Estéreo, previa coordinación por parte del staff. No se realizará ningún tipo de envío.</li>
+          <li>Al agotar la existencia de cada pack, se deshabilitará el correspondiente botón de pago.</li>
           <li>Los productos entregados no tienen cambio ni devolución y no pueden ser escogidos a elección.</li>
           <li>Los packs: Matecito, Pituco, Gafitas y Súper estarán disponibles hasta agotar el stock de obsequios.</li>
           <li>"Comunidad Estéreo" es una iniciativa única y exclusiva de Festival Estéreo.</li>

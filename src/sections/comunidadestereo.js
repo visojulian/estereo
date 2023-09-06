@@ -32,12 +32,13 @@ export default function ComunidadEstereo() {
                 <Button sx={c.bgColor != 'white' ? { ...styles.button } : { ...styles.button, border: '2px solid #14162D' }}>
                   <Link
                     target={'_blank'}
-                    sx={{ color: 'third', textDecoration: 'none' }}
+                    sx={{ color: 'third', textDecoration: 'none', width: '100%' }}
                     path={c.link}>
                     {c.price}
                   </Link>
                 </Button>
                 <div sx={{ backgroundColor: c.combineColor, height: '0.7em', width: '100%', position: 'absolute', bottom: 0 }}></div>
+                {c.stock > 0 && <div sx={{ height: '0.7em', width: '100%', position: 'absolute', bottom: -4, color: 'third', fontSize: '0.5em' }}>Sólo se entregarán {c.stock} packs.</div>}
               </div>
             </div>
           );
@@ -47,6 +48,7 @@ export default function ComunidadEstereo() {
         ¡IMPORTANTE!
         <ul sx={{ textAlign: 'justify', width: '95%' }}>
           <li>Luego de participar deberás comunicarte con nosotros para coordinar la entrega de obsequios.</li>
+          <li>Al agotar la existencia de cada pack, se deshabilitará el correspondiente botón de pago.</li>
           <li>Todos los obsequios se entregarán únicamente de manera presencial durante la realización de Festival Estéreo, previa coordinación por parte del staff. No se realizará ningún tipo de envío.</li>
           <li>Los productos entregados no tienen cambio ni devolución y no pueden ser escogidos a elección.</li>
           <li>Los packs: Matecito, Pituco, Gafitas y Súper estarán disponibles hasta agotar el stock de obsequios.</li>
@@ -157,7 +159,8 @@ const cards = [
     ],
     bgColor: 'third',
     combineColor: 'primary',
-    link: 'https://mpago.la/2byr9SV',
+    link: 'https://mpago.la/16WJ6JB',
+    stock: 0,
   },
   {
     title: 'Pack Estéreo +',
@@ -168,6 +171,7 @@ const cards = [
     bgColor: 'primary',
     combineColor: 'yellow',
     link: 'https://mpago.la/1Ah4TTo',
+    stock: 0,
   },
   {
     title: 'Pack Matecito',
@@ -178,16 +182,18 @@ const cards = [
     bgColor: 'fourth',
     combineColor: 'third',
     link: 'https://mpago.la/31LvGNx',
+    stock: 10,
   },
   {
     title: 'Pack Pituco',
     price: '$7.500',
     benefits: [
-      'Remera Estéreo /Amnistía', 'Totebag Estéreo /Amnistía', 'Pack stickers Estéreo',
+      'Remera Estéreo / Amnistía', 'Totebag Estéreo / Amnistía', 'Pack stickers Estéreo',
     ],
     bgColor: 'third',
     combineColor: 'primary',
     link: 'https://mpago.la/1eHfGaF',
+    stock: 10,
   },
   {
     title: 'Pack Gafitas',
@@ -198,6 +204,7 @@ const cards = [
     bgColor: 'primary',
     combineColor: 'yellow',
     link: 'https://mpago.la/1AXCc1F',
+    stock: 10,
   },
   {
     title: 'Súper Pack',
@@ -208,6 +215,7 @@ const cards = [
     bgColor: 'fourth',
     combineColor: 'third',
     link: 'https://mpago.la/1jzECxL',
+    stock: 5,
   },
   {
     title: 'SI VIVÍS EN EL EXTERIOR',
@@ -218,5 +226,6 @@ const cards = [
     bgColor: 'white',
     combineColor: 'third',
     link: 'https://paypal.me/estereofestival',
+    stock: 0,
   },
 ]
