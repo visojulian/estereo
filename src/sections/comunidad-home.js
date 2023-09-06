@@ -30,7 +30,7 @@ export default function ComunidadHome() {
             </Text>
           </Box>
           <Link
-            href={'/festival'}
+            href={'/comunidad'}
             spy={true}
             smooth={true}
           >
