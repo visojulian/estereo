@@ -97,9 +97,10 @@ const styles = {
   },
   card: {
     pt: 5,
-    m: ['1em 0', '1em', '1em', '1em', '1em', '1em 3em'],
-    width: ['100%', '100%', '100%', '40%', '40%', '20%'],
-    minHeight: '50vh',
+    m: ['1em 0', '1em', '1em', '1em', '1em', '1em 2em'],
+    width: ['100%', '100%', '100%', '40%', '40%', '25%'],
+    minHeight: ['90vh', '60vh'],
+    height: '25vw',
     color: 'white',
     textTransform: 'uppercase',
     fontSize: '1.5em',

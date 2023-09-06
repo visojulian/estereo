@@ -18,6 +18,7 @@ export default function GraciasLanding() {
       <Text as='p' sx={{ fontSize: '1.5em', fontWeight: '300', textAlign: 'center' }}>
         Este proyecto no sería posible sin la inmensa colaboración de tu parte. <br />
         Por favor, ponete en contacto para poder coordinar la entrega de tus obsequios.<br />
+        hola@festivalestereo.com.ar<br />
         Siempre vas a estar presente en nuestros ❤️.
       </Text>
       <Text sx={{ fontSize: '1em', fontWeight: '300', textAlign: 'center', mt: '2em' }}>
