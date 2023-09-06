@@ -6,45 +6,22 @@ import estrella from 'assets/estrella.png'
 import estrellaAmarilla from 'assets/estrella_amarilla.png'
 import { Link } from 'components/link';
 
-export default function ComunidadEstereo() {
+export default function GraciasLanding() {
   return (
     <section sx={styles.container}>
       <Heading as="h1" sx={styles.title}>
         Comunidad Estéreo
       </Heading>
-      <Heading as="p" variant="heroSecondary" sx={{ mt: 5, mb: 0, fontWeight: '300' }}>
-        ¡Colaborar con Estéreo tiene beneficios!
+      <Heading as="h2" sx={{ mt: 5, mb: 0, fontWeight: '300', fontSize: '2em', textAlign: 'center' }}>
+        ¡Gracias por colaborar con Estéreo!
       </Heading>
-      <div sx={styles.cardsContainer}>
-        {cards.map((c, idx) => {
-          return (
-            <div sx={c.bgColor != 'white' ? { ...styles.card, backgroundColor: c.bgColor } : { ...styles.card, backgroundColor: c.bgColor, color: 'third !important', border: '2px solid #14162D' }} key={idx}>
-              <div sx={styles.content}>
-                <div sx={{ borderBottom: '3px solid white', }}>{c.title}</div>
-                <ul>
-                  {c.benefits.map((b, i) => {
-                    return (
-
-                      <li sx={c.bgColor == 'white' && { px: '2em', textTransform: 'none !important' }} key={i}>{c.bgColor != 'white' && (idx === 1 || idx === 4 ? <Image src={estrellaAmarilla} /> : <Image src={estrella} />)}{b}</li>
-                    );
-                  })}
-                </ul>
-                <Button sx={c.bgColor != 'white' ? { ...styles.button } : { ...styles.button, border: '2px solid #14162D' }}>
-                  <Link
-                    target={'_blank'}
-                    sx={{ color: 'third', textDecoration: 'none' }}
-                    path={c.link}>
-                    {c.price}
-                  </Link>
-                </Button>
-                <div sx={{ backgroundColor: c.combineColor, height: '0.7em', width: '100%', position: 'absolute', bottom: 0 }}></div>
-              </div>
-            </div>
-          );
-        })}
-      </div>
-      <Text sx={{ fontSize: '0.8em', fontWeight: '300', textAlign: 'center' }}>
-        ¡IMPORTANTE!
+      <Text as='p' sx={{ fontSize: '1.5em', fontWeight: '300', textAlign: 'center' }}>
+        Este proyecto no sería posible sin la inmensa colaboración de tu parte. <br />
+        Por favor, ponete en contacto para poder coordinar la entrega de tus obsequios.<br />
+        Siempre vas a estar presente en nuestros ❤️.
+      </Text>
+      <Text sx={{ fontSize: '1em', fontWeight: '300', textAlign: 'center', mt: '2em' }}>
+        ¡Recordá lo siguiente!
         <ul sx={{ textAlign: 'justify', width: '95%' }}>
           <li>Luego de participar deberás comunicarte con nosotros para coordinar la entrega de obsequios.</li>
           <li>Todos los obsequios se entregarán únicamente de manera presencial durante la realización de Festival Estéreo, previa coordinación por parte del staff. No se realizará ningún tipo de envío.</li>
