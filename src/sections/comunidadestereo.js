@@ -194,7 +194,7 @@ const cards = [
     bgColor: 'third',
     combineColor: 'primary',
     link: 'https://mpago.la/1eHfGaF',
-    stock: 10,
+    stock: 5,
   },
   {
     title: 'Pack Gafitas',
