@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Button, Box } from 'theme-ui';
+import { jsx, Button, Image, Box } from 'theme-ui';
 import Background from 'assets/landing/background.png';
 import Escenario from 'assets/landing/escenario.svg';
 import CortinasLeft from 'assets/landing/cortinas-left.svg';
@@ -18,7 +18,25 @@ export default function Landing() {
 
   return (
     <section sx={styles.background}>
-      <Box sx={styles.escenario}></Box>
+      <Image sx={styles.escenario} src={Escenario}></Image>
+      <Image sx={styles.starsLeft} src={StarsLeft}></Image>
+      <Image sx={styles.starsRight} src={StarsRight}></Image>
+      <Image sx={styles.cortinasLeft} src={CortinasLeft}></Image>
+      <Image sx={styles.cortinasRight} src={CortinasRight}></Image>
+      <Image sx={styles.edicion} src={Edicion}></Image>
+      <Image sx={styles.fecha} src={Fecha}></Image>
+      <Image sx={styles.lugar} src={Lugar}></Image>
+      <Image sx={styles.logo} src={Logo}></Image>
+      <Image sx={styles.mesa} src={Mesa}></Image>
+      <Image sx={styles.cifespod} src={Cifespod}></Image>
+      <Box sx={styles.landing}>
+        <Link path="/home">
+          <Button sx={styles.button}>
+            Acceder
+          </Button>
+        </Link>
+      </Box>
+      {/* <Box sx={styles.escenario}></Box>
       <Box sx={styles.starsLeft}></Box>
       <Box sx={styles.starsRight}></Box>
       <Box sx={styles.cortinasLeft}></Box>
@@ -35,193 +53,176 @@ export default function Landing() {
             Acceder
           </Button>
         </Link>
-      </Box>
+      </Box> */}
     </section>
   );
 }
 
 const styles = {
   background: {
+    position: 'relative',
     backgroundImage: `url(${Background})`,
     backgroundRepeat: `no-repeat`,
     backgroundPosition: 'center center',
     backgroundSize: 'cover',
+    width: '100vw',
     height: '100vh',
   },
   escenario: {
+    overflow: 'hidden',
     position: 'absolute',
-    height: '100vh',
-    width: '100vw',
     left: 0,
-    backgroundImage: `url(${Escenario})`,
-    backgroundRepeat: `no-repeat`,
-    backgroundPosition: 'bottom center',
+    bottom: 0,
+    minHeight: '10%',
+    objectFit: 'cover'
   },
   cortinasLeft: {
     position: 'absolute',
-    height: '100vh',
-    width: '67vw',
-    left: 0,
-    backgroundImage: `url(${CortinasLeft})`,
-    backgroundRepeat: `no-repeat`,
-    backgroundPosition: 'top left',
-    backgroundSize: 'contain',
-    resize: 'both',
+    left: -2,
+    width: '20em',
     '@media screen and (min-width: 768px)': {
-      width: '60vh',
+      left: 0,
+      width: '40em',
     },
   },
   cortinasRight: {
     position: 'absolute',
+    display: 'inline',
     right: 0,
-    height: '100vh',
-    width: '72vw',
-    backgroundImage: `url(${CortinasRight})`,
-    backgroundRepeat: `no-repeat`,
-    backgroundPosition: 'top right',
-    backgroundSize: 'contain',
-    resize: 'both',
+    width: '20em',
     '@media screen and (min-width: 768px)': {
-      width: '60vh',
+      width: '40em',
     },
   },
   starsRight: {
     position: 'absolute',
-    height: '100vh',
-    width: '60vw',
     right: 0,
-    backgroundImage: `url(${StarsRight})`,
-    backgroundRepeat: `no-repeat`,
-    backgroundPosition: 'center right 35%',
-    resize: 'both',
+    display: 'block',
+    '@media screen and (max-width: 768px)': {
+      right: 7,
+      top: 5,
+      display: 'none',
+    },
+  },
+  starsLeft: {
+    position: 'absolute',
+    left: -50,
     display: 'none',
     '@media screen and (min-width: 768px)': {
       display: 'block',
     },
   },
-  starsLeft: {
-    position: 'absolute',
-    height: '100vh',
-    width: '100vw',
-    left: 0,
-    backgroundImage: `url(${StarsLeft})`,
-    backgroundRepeat: `no-repeat`,
-    backgroundPosition: 'center center',
-    backgroundSize: '70%',
-    resize: 'both',
-    '@media screen and (min-width: 768px)': {
-      backgroundPosition: 'center left 35%',
-      backgroundSize: 'revert',
-      width: '60vw',
-    },
-  },
   edicion: {
     position: 'absolute',
-    height: '100vh',
-    width: '42vw',
     left: 0,
-    backgroundImage: `url(${Edicion})`,
-    backgroundRepeat: `no-repeat`,
-    backgroundPosition: 'top 7% left 20%',
-    backgroundSize: '45%',
-    resize: 'both',
+    padding: '2em',
+    width: '9em',
     '@media screen and (min-width: 768px)': {
-      backgroundPosition: 'top 15% left 5%',
-      backgroundSize: '12%',
-      width: '50vw',
+      margin: '2em',
+      width: '10em',
     },
   },
   fecha: {
     position: 'absolute',
-    height: '100vh',
-    width: '42vw',
     right: 0,
-    backgroundImage: `url(${Fecha})`,
-    backgroundRepeat: `no-repeat`,
-    backgroundPosition: 'top 7% right 20%',
-    backgroundSize: '35%',
-    resize: 'both',
+    padding: '2em',
+    width: '8em',
     '@media screen and (min-width: 768px)': {
-      backgroundPosition: 'top 15% right 4%',
-      backgroundSize: '10%',
-      width: '50vw',
+      margin: '2em',
+      width: '10em',
     },
   },
   lugar: {
-    position: 'absolute',
-    height: '100vh',
-    width: '100vw',
-    backgroundImage: `url(${Lugar})`,
-    backgroundRepeat: `no-repeat`,
-    backgroundPosition: 'top 35% center',
-    backgroundSize: '35%',
-    resize: 'both',
+    position: 'relative',
+    zIndex: 1,
+    width: '40%',
+    margin: 'auto',
+    padding: '50% 0 0 2%',
+    display: 'block',
+    '@media screen and (min-width: 490px)': {
+      padding: '30% 0 0 2%',
+      width: '30%',
+    },
     '@media screen and (min-width: 768px)': {
-      backgroundPosition: 'top 15% center',
-      backgroundSize: 'revert',
-      width: '100vw',
+      padding: '40% 0 0 5%',
+      width: '30%',
+    },
+    '@media screen and (min-width: 1024px)': {
+      padding: '8% 2% 0 0',
+      width: '12%',
     },
   },
   logo: {
-    position: 'absolute',
-    height: '100vh',
-    width: '100vw',
-    left: 0,
-    backgroundImage: `url(${Logo})`,
-    backgroundRepeat: `no-repeat`,
-    backgroundPosition: 'top 42% center',
-    backgroundSize: '65%',
-    resize: 'both',
+    position: 'relative',
+    zIndex: 1,
+    width: '60%',
+    display: 'block',
+    margin: 'auto',
+    padding: '5% 0 0 2%',
+    '@media screen and (min-width: 490px)': {
+      width: '40%',
+    },
     '@media screen and (min-width: 768px)': {
-      backgroundPosition: 'top 25% center',
-      backgroundSize: 'revert',
-      width: '100vw',
+      padding: '1% 0 0 5%',
+      width: '35%',
+    },
+    '@media screen and (min-width: 1024px)': {
+      padding: '1% 2.2% 0 0',
+      width: '25%',
+      mt: 4,
     },
   },
   cifespod: {
     position: 'absolute',
-    height: '100vh',
-    width: '100vw',
-    left: 0,
-    backgroundImage: `url(${Cifespod})`,
-    backgroundRepeat: `no-repeat`,
-    backgroundPosition: 'top 7% center',
-    backgroundSize: '20%',
-    resize: 'both',
+    top: 9,
+    left: '40%',
+    width: '20%',
     '@media screen and (min-width: 768px)': {
-      backgroundPosition: 'bottom 8% right 10%',
-      backgroundSize: 'revert',
+      left: '48%',
+      width: '10%',
+    },
+    '@media screen and (min-width: 1024px)': {
+      width: '5%',
+      top: 'unset',
+      left: '90%',
+      bottom: 5,
     },
   },
   mesa: {
     position: 'absolute',
-    height: '100vh',
-    width: '100vw',
-    left: 0,
-    backgroundImage: `url(${Mesa})`,
-    backgroundRepeat: `no-repeat`,
-    backgroundPosition: 'bottom 2% left 12%',
-    backgroundSize: '90%',
-    resize: 'both',
+    bottom: 0,
+    left: -4,
+    '@media screen and (min-width: 490px)': {
+      left: '5%',
+    },
     '@media screen and (min-width: 768px)': {
-      backgroundPosition: 'bottom 2% left 47.7%',
-      backgroundSize: 'revert',
+      left: '20%',
+      width: '60%'
+    },
+    '@media screen and (min-width: 1024px)': {
+      left: '30%',
+      width: '35%'
     },
   },
   button: {
     fontSize: '24px !important',
-    marginTop: '100%',
     '@media screen and (min-width: 768px)': {
-      marginTop: '0',
+      ml: '10%',
+      mt: 4,
+    },
+    '@media screen and (min-width: 1024px)': {
+      ml: -7
     },
   },
   landing: {
-    position: 'absolute',
+    pt: 8,
+    position: 'relative',
     zIndex: 2,
-    height: '100vh',
-    width: '100vw',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
+    '@media screen and (min-width: 490px)': {
+      pt: 5,
+    }
   },
 }

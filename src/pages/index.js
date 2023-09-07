@@ -9,8 +9,10 @@ export default function IndexPage() {
   return (
     <ThemeProvider theme={theme}>
       <StickyProvider>
-        <SEO title="Estéreo: Festival de Podcast" />
-        <Landing />
+        <div sx={{ overflow: 'hidden' }}>
+          <SEO title="Estéreo: Festival de Podcast" />
+          <Landing />
+        </div>
       </StickyProvider>
     </ThemeProvider>
   );
