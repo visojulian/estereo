@@ -36,24 +36,6 @@ export default function Landing() {
           </Button>
         </Link>
       </Box>
-      {/* <Box sx={styles.escenario}></Box>
-      <Box sx={styles.starsLeft}></Box>
-      <Box sx={styles.starsRight}></Box>
-      <Box sx={styles.cortinasLeft}></Box>
-      <Box sx={styles.cortinasRight}></Box>
-      <Box sx={styles.edicion}></Box>
-      <Box sx={styles.fecha}></Box>
-      <Box sx={styles.lugar}></Box>
-      <Box sx={styles.logo}></Box>
-      <Box sx={styles.mesa}></Box>
-      <Box sx={styles.cifespod}></Box>
-      <Box sx={styles.landing}>
-        <Link path="/home">
-          <Button sx={styles.button}>
-            Acceder
-          </Button>
-        </Link>
-      </Box> */}
     </section>
   );
 }
