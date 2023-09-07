@@ -187,13 +187,13 @@ const cards = [
   },
   {
     title: 'Pack Pituco',
-    price: '$7.500',
+    price: '[AGOTADO]',
     benefits: [
       'Remera Estéreo / Amnistía', 'Totebag Estéreo / Amnistía', 'Pack stickers Estéreo',
     ],
-    bgColor: 'third',
+    bgColor: 'gray',
     combineColor: 'primary',
-    link: 'https://mpago.la/1eHfGaF',
+    link: '',
     stock: 5,
   },
   {
