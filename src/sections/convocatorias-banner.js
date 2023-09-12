@@ -6,6 +6,7 @@ import ShapeRight from 'assets/shape-right.png';
 import maraton from 'assets/convocatorias/maraton.jpg';
 import showcase from 'assets/convocatorias/showcases.jpg';
 import voluntarios from 'assets/convocatorias/voluntarios.jpg';
+import independientes from 'assets/convocatorias/independientes.png';
 import { Link } from 'components/link';
 
 export default function ConvocatoriasBanner() {
@@ -16,6 +17,34 @@ export default function ConvocatoriasBanner() {
           <Heading as="h2" variant="heroPrimary">
             Convocatorias
           </Heading>
+          <hr sx={{ mt: 5, mb: 6 }} />
+          <Heading as="h3" variant="heroThird">
+            Podcast Independientes
+          </Heading>
+          <Image
+            src={independientes}
+            width='auto'
+            height='auto'
+          />
+          <Text as="p" variant="heroSecondary" sx={{ mt: 5 }}>
+            Tu podcast en Estéreo
+          </Text>
+          <Text as="p" variant="heroSecondary">
+            ¡Queremos conocer nuevos proyectos!
+          </Text>
+          <Text as="p" variant="heroSecondary">
+            <strong>Si hacés un podcast, nos encantaría que nos cuentes de qué se trata para escucharlo.</strong>
+          </Text>
+          <Link
+            path={'https://forms.gle/PchhDGKXP7N1igFZ7'}
+            spy={true}
+            smooth={true}
+            target='blank'
+          >
+            <Button variant="primary">
+              Inscripción
+            </Button>
+          </Link>
           <hr sx={{ mt: 5, mb: 5 }} />
           <Heading as="h3" variant="heroThird">
             Maratón de Podcast
