@@ -55,7 +55,6 @@ export default async function sendEmail(req, res) {
           <p>${message}</p>
           <br>
           </div>
-          <p style="font-size: 5px;padding-bottom: 20px;border-bottom: 1px solid #D1D5DB;">Este correo llega a ustedes gracias a la genialidad de Juli Viso</p>
           </div>
         </body>
       </html>`,
