@@ -198,13 +198,13 @@ const cards = [
   },
   {
     title: 'Pack Gafitas',
-    price: '$10.000',
+    price: '[AGOTADO]',
     benefits: [
       'Lentes de Sol CIMA', 'Póster Oficial Estéreo', 'Pack stickers Estéreo',
     ],
-    bgColor: 'primary',
+    bgColor: 'gray',
     combineColor: 'yellow',
-    link: 'https://mpago.la/1AXCc1F',
+    link: '',
     stock: 10,
   },
   {
