@@ -157,7 +157,7 @@ const styles = {
   },
   logo: {
     mx: 'auto',
-    maxHeight: '60px',
+    maxHeight: '5em',
   },
   logoFooter: {
     width: '40%',

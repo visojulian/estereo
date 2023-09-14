@@ -23,6 +23,7 @@ import Drop from 'assets/sponsor/drop.png';
 import Podcasteros from 'assets/sponsor/podcasteros.png';
 import TodoSobrePodcast from 'assets/sponsor/todosobre.png';
 import EscuchaPodcast from 'assets/sponsor/escuchapodcast.png';
+import Aehgar from 'assets/sponsor/aehgar.png';
 
 export default {
   widgets: [
@@ -46,7 +47,7 @@ export default {
     },
     {
       id: 3,
-      logos: [Biblioteca, Cultura, Diputados, Galpon, Esc, Cairo, Fomento, Labso, Municipalidad, Unraf, MinCultura, ConcejoMuni],
+      logos: [Biblioteca, Cultura, Diputados, Galpon, Esc, Cairo, Fomento, Labso, Municipalidad, Unraf, MinCultura, ConcejoMuni, Aehgar],
       altText: 'Institución',
       title: 'Instituciones',
     },
