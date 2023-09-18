@@ -198,7 +198,7 @@ const cards = [
   },
   {
     title: 'Pack Gafitas',
-    price: '$10.000',
+    price: '$23.000',
     benefits: [
       'Lentes de Sol CIMA', 'Póster Oficial Estéreo', 'Pack stickers Estéreo',
     ],
@@ -209,13 +209,14 @@ const cards = [
   },
   {
     title: 'Súper Pack',
-    price: '$20.000',
+    price: 'AGOTADO',
     benefits: [
       'Lentes de Sol CIMA', 'Mate y bombilla Taragüí', 'Póster Oficial Estéreo', 'Pack stickers Estéreo',
     ],
-    bgColor: 'fourth',
+    bgColor: 'gray',
     combineColor: 'third',
-    link: 'https://mpago.la/1jzECxL',
+    link: '',
+    // link: 'https://mpago.la/1jzECxL',
     stock: 5,
   },
   {
