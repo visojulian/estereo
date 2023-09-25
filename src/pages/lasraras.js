@@ -48,9 +48,8 @@ export default function Festival() {
             </Box>
           </Container>
           <Container sx={styles.buttons}>
-            <Box sx={{ backgroundColor: 'primary', maxWidth: ['100%', '80%'], mx: 'auto', mb: 2, fontSize: '1.5em', py: 1, textAlign: 'center', position: 'relative', fontFamily: 'Chakra Petch' }}>
+            <Box sx={{ backgroundColor: 'fourth', maxWidth: ['100%', '80%'], mx: 'auto', mb: 2, fontSize: '1.5em', py: 1, textAlign: 'center', position: 'relative', fontFamily: 'Chakra Petch' }}>
               <Link path={'https://forms.gle/gzb94NPafrQzsaGLA'} target='_blank'>
-                <Image src={parlante} sx={{ maxWidth: ['2em', '2.5em'], position: 'absolute', left: -2, top: [5, 3] }} />
                 <b>INSCRIBITE HACIENDO CLICK AQUÍ</b>
               </Link>
             </Box>
