@@ -1,7 +1,7 @@
 export default [
   {
-    path: '/home',
-    label: 'Home',
+    path: '/lasraras',
+    label: 'Talleres',
   },
   {
     path: 'festival',
