@@ -24,6 +24,7 @@ import Podcasteros from 'assets/sponsor/podcasteros.png';
 import TodoSobrePodcast from 'assets/sponsor/todosobre.png';
 import EscuchaPodcast from 'assets/sponsor/escuchapodcast.png';
 import Aehgar from 'assets/sponsor/aehgar.png';
+import Gato from 'assets/sponsor/eglc.png';
 
 export default {
   widgets: [
@@ -35,8 +36,8 @@ export default {
     // },
     {
       id: 1,
-      logos: [Amnistia],
-      altText: 'Amnistía Internacional',
+      logos: [Amnistia, Gato],
+      altText: 'Apoyos institucionales',
       title: 'Con el apoyo de',
     },
     {

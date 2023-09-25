@@ -10,7 +10,7 @@ export default function Footer() {
     <footer sx={styles.footer}>
       <Container>
         <Grid sx={styles.widgets} id='partners'>
-          {data.widgets.map((item) => (
+          {data.widgets.map((item, index) => (
             <Box
               key={`footer-widget--key${item.id}`}
               sx={styles.widgets.widgetItem}
@@ -20,7 +20,7 @@ export default function Footer() {
                 <Heading as="h3" sx={styles.widgets.title}>{item.title}</Heading>
               </Box>
               {
-                item.logos.length > 1 ?
+                index > 0 ?
                   <Grid sx={styles.logoGrid}>
                     {
                       item.logos.map((logo, i) => (
@@ -29,7 +29,10 @@ export default function Footer() {
                     }
                   </Grid>
                   :
-                  <Image sx={styles.mainSponsor} src={item.logos[0]} alt={item.altText} />
+                  <>
+                    <Image sx={styles.mainSponsor} src={item.logos[0]} alt={item.altText} />
+                    <Image sx={styles.mainSponsor} src={item.logos[1]} alt={item.altText} />
+                  </>
               }
             </Box>
           ))}
@@ -164,9 +167,9 @@ const styles = {
     objectFit: 'contain',
   },
   mainSponsor: {
-    ' img': {
-      width: '40% !important',
-    }
+
+    height: ['6em', '6em', '6em', '6em', '9em'],
+
   },
   widgets: {
     py: [4, null, 6],
