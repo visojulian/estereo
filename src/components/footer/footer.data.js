@@ -25,6 +25,10 @@ import TodoSobrePodcast from 'assets/sponsor/todosobre.png';
 import EscuchaPodcast from 'assets/sponsor/escuchapodcast.png';
 import Aehgar from 'assets/sponsor/aehgar.png';
 import Gato from 'assets/sponsor/eglc.png';
+import Amr from 'assets/sponsor/amr.png';
+import Posta from 'assets/sponsor/posta.png';
+import Interes from 'assets/sponsor/interesgeneral.png';
+import LaCapital from 'assets/sponsor/lacapital.png';
 
 export default {
   widgets: [
@@ -42,18 +46,30 @@ export default {
     },
     {
       id: 2,
-      logos: [SanCristobal, Taragui, Cima, Hindenburg, Chevallier, Brujula, Ugr, ImageCampus],
+      logos: [Posta],
+      altText: 'Posta',
+      title: 'Maratón Partner',
+    },
+    {
+      id: 3,
+      logos: [Interes],
+      altText: 'Interés general',
+      title: 'Showcase Partner',
+    },
+    {
+      id: 4,
+      logos: [SanCristobal, Taragui, Cima, Hindenburg, Chevallier, Brujula, Ugr, ImageCampus, Amr, LaCapital],
       altText: 'Partner',
       title: 'Partners',
     },
     {
-      id: 3,
+      id: 5,
       logos: [Biblioteca, Cultura, Diputados, Galpon, Esc, Cairo, Fomento, Labso, Municipalidad, Unraf, MinCultura, ConcejoMuni, Aehgar],
       altText: 'Institución',
       title: 'Instituciones',
     },
     {
-      id: 4,
+      id: 6,
       logos: [Drop, TodoSobrePodcast, Podcasteros, EscuchaPodcast],
       altText: 'Comunidad',
       title: 'Comunidades',

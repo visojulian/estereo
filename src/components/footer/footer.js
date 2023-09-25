@@ -16,18 +16,53 @@ export default function Footer() {
               sx={styles.widgets.widgetItem}
               id={`i${item.title.toLowerCase()}`}
             >
-              <Box sx={styles.widgets.infoWrapper}>
-                <Heading as="h3" sx={styles.widgets.title}>{item.title}</Heading>
-              </Box>
+
+              {item.id != 2 && item.id != 3 && (
+                <Box sx={styles.widgets.infoWrapper}>
+                  <Heading as="h3" sx={styles.widgets.title}>{item.title}</Heading>
+                </Box>
+              )
+              }
               {
-                index > 0 ?
-                  <Grid sx={styles.logoGrid}>
-                    {
-                      item.logos.map((logo, i) => (
-                        <Image key={i} src={logo} alt={item.altText} sx={styles.logo} />
-                      ))
-                    }
-                  </Grid>
+                item.id > 1 ?
+                  item.id == 2 ?
+                    <div sx={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap' }}>
+                      <div sx={{ display: 'flex', flexDirection: 'column', width: ['100%', '50%', '40%'] }}>
+                        <Box >
+                          <Heading as="h3" sx={styles.widgets.title}>{item.title}</Heading>
+                        </Box>
+                        <Box sx={styles.logoGridPartners}>
+                          {
+                            item.logos.map((logo, i) => (
+                              <Image key={i} src={logo} alt={item.altText} sx={styles.logoPartners} />
+                            ))
+                          }
+                        </Box>
+                      </div>
+                      <div sx={{ display: 'flex', flexDirection: 'column', width: ['100%', '50%', '40%'] }}>
+                        <Box >
+                          <Heading as="h3" sx={styles.widgets.title}>{data.widgets[index + 1].title}</Heading>
+                        </Box>
+                        <Box sx={styles.logoGridPartners}>
+                          {
+                            data.widgets[index + 1].logos.map((logo, i) => (
+                              <Image key={i} src={logo} alt={item.altText} sx={{ ...styles.logoPartners, mt: '1em' }} />
+                            ))
+                          }
+                        </Box>
+                      </div>
+                    </div>
+                    :
+                    item.id == 3 ?
+                      <></>
+                      :
+                      <Grid sx={styles.logoGrid}>
+                        {
+                          item.logos.map((logo, i) => (
+                            <Image key={i} src={logo} alt={item.altText} sx={styles.logo} />
+                          ))
+                        }
+                      </Grid>
                   :
                   <>
                     <Image sx={styles.mainSponsor} src={item.logos[0]} alt={item.altText} />
@@ -157,6 +192,20 @@ const styles = {
     display: 'flex',
     justifyContent: 'space-around',
     flexWrap: 'wrap',
+  },
+  logoGridPartners: {
+    py: [1, null, 2],
+    width: ['100%', '50%', '50%'],
+    mx: 'auto',
+    alignItems: 'center',
+    display: 'flex',
+    justifyContent: 'space-around',
+    flexWrap: 'wrap',
+  },
+
+  logoPartners: {
+    mx: 'auto',
+    maxHeight: ['5em', '8em', '9em'],
   },
   logo: {
     mx: 'auto',
