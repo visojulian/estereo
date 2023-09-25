@@ -67,6 +67,7 @@ export default function Footer() {
                   <>
                     <Image sx={styles.mainSponsor} src={item.logos[0]} alt={item.altText} />
                     <Image sx={styles.mainSponsor} src={item.logos[1]} alt={item.altText} />
+                    <hr></hr>
                   </>
               }
             </Box>
