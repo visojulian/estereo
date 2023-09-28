@@ -65,7 +65,8 @@ export default function Festival() {
                 py: 1,
                 textAlign: 'center',
                 position: 'relative',
-                fontFamily: 'Chakra Petch'
+                fontFamily: 'Chakra Petch',
+                cursor: 'pointer'
               }}>
 
               <Image src={parlante} sx={{ maxWidth: ['2em', '2.5em'], position: 'absolute', left: -2, top: [5, 3] }} />
@@ -73,19 +74,19 @@ export default function Festival() {
 
             </Box>
             <Image src={estrella} sx={{ maxWidth: '1.8em', mx: 'auto' }} />
-            <Box sx={{ backgroundColor: '#368DEC', maxWidth: ['100%', '80%'], mx: 'auto', mb: 2, fontSize: '1.5em', py: 1, textAlign: 'center', position: 'relative', fontFamily: 'Chakra Petch' }}>
-              <Link path={'/convocatorias'}>
+            <Link path={'/convocatorias'}>
+              <Box sx={{ backgroundColor: '#368DEC', maxWidth: ['100%', '80%'], mx: 'auto', mb: 2, fontSize: '1.5em', py: 1, textAlign: 'center', position: 'relative', fontFamily: 'Chakra Petch' }}>
                 <Image src={mate} sx={{ maxWidth: '2em', position: 'absolute', right: -2, bottom: -3 }} />
                 <b>CONVOCATORIAS</b>
-              </Link>
-            </Box>
+              </Box>
+            </Link>
             <Image src={estrella} sx={{ maxWidth: '1.8em', mx: 'auto' }} />
-            <Box sx={{ backgroundColor: 'third', maxWidth: ['100%', '80%'], mx: 'auto', mb: 2, fontSize: '1.5em', py: 1, textAlign: 'center', position: 'relative', fontFamily: 'Chakra Petch' }}>
-              <Link path={'/lasraras'}>
+            <Link path={'/lasraras'}>
+              <Box sx={{ backgroundColor: 'third', maxWidth: ['100%', '80%'], mx: 'auto', mb: 2, fontSize: '1.5em', py: 1, textAlign: 'center', position: 'relative', fontFamily: 'Chakra Petch' }}>
                 <Image src={carlito} sx={{ maxWidth: ['4em', '5em'], position: 'absolute', left: [1, 4, 4, 4, '8em'], bottom: -2 }} />
                 <b>TALLERES</b>
-              </Link>
-            </Box>
+              </Box>
+            </Link>
             <Image src={estrella} sx={{ maxWidth: '1.8em', mx: 'auto' }} />
           </Container>
           <Container sx={{ maxWidth: ['100%', '100%', '100%', '100%', '100%', '70%'] }}>
