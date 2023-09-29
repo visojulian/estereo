@@ -29,6 +29,7 @@ import Amr from 'assets/sponsor/amr.png';
 import Posta from 'assets/sponsor/posta.png';
 import Interes from 'assets/sponsor/interesgeneral.png';
 import LaCapital from 'assets/sponsor/lacapital.png';
+import Dev from 'assets/sponsor/18dev.svg';
 
 export default {
   widgets: [
@@ -58,7 +59,7 @@ export default {
     },
     {
       id: 4,
-      logos: [SanCristobal, Taragui, Cima, Hindenburg, Chevallier, Brujula, Ugr, ImageCampus, Amr, LaCapital],
+      logos: [SanCristobal, Taragui, Cima, Hindenburg, Chevallier, Brujula, Ugr, ImageCampus, Amr, LaCapital, Dev],
       altText: 'Partner',
       title: 'Partners',
     },

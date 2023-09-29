@@ -44,14 +44,14 @@ export default function Banner() {
             viewportWidth > 1024 ?
               <>
                 <Link
-                  href={'/festival'}
+                  href={'/cronograma'}
                   spy={true}
                   smooth={true}
                 >
                   <Image src={Landscape} sx={{ mb: 4 }} />
                 </Link>
                 <Link
-                  href={'/festival'}
+                  href={'/cronograma'}
                   spy={true}
                   smooth={true}
                 >
@@ -63,14 +63,14 @@ export default function Banner() {
               :
               <>
                 <Link
-                  href={'/festival'}
+                  href={'/cronograma'}
                   spy={true}
                   smooth={true}
                 >
                   <Image src={Grilla} sx={{ mb: 4 }} />
                 </Link>
                 <Link
-                  href={'/festival'}
+                  href={'/cronograma'}
                   spy={true}
                   smooth={true}
                 >

@@ -54,25 +54,26 @@ export default function Festival() {
           </Container>
           <Container sx={styles.buttons}>
             <Image src={estrella} sx={{ maxWidth: '1.8em', mx: 'auto' }} />
-            <Box
-              onClick={() => setShow(true)}
-              sx={{
-                backgroundColor: 'primary',
-                maxWidth: ['100%', '80%'],
-                mx: 'auto',
-                mb: 2,
-                fontSize: '1.5em',
-                py: 1,
-                textAlign: 'center',
-                position: 'relative',
-                fontFamily: 'Chakra Petch',
-                cursor: 'pointer'
-              }}>
+            <Link path={'/cronograma'}>
+              <Box
+                sx={{
+                  backgroundColor: 'primary',
+                  maxWidth: ['100%', '80%'],
+                  mx: 'auto',
+                  mb: 2,
+                  fontSize: '1.5em',
+                  py: 1,
+                  textAlign: 'center',
+                  position: 'relative',
+                  fontFamily: 'Chakra Petch',
+                  cursor: 'pointer'
+                }}>
 
-              <Image src={parlante} sx={{ maxWidth: ['2em', '2.5em'], position: 'absolute', left: -2, top: [5, 3] }} />
-              <b>VER GRILLA</b>
+                <Image src={parlante} sx={{ maxWidth: ['2em', '2.5em'], position: 'absolute', left: -2, top: [5, 3] }} />
+                <b>VER GRILLA</b>
 
-            </Box>
+              </Box>
+            </Link>
             <Image src={estrella} sx={{ maxWidth: '1.8em', mx: 'auto' }} />
             <Link path={'/convocatorias'}>
               <Box sx={{ backgroundColor: '#368DEC', maxWidth: ['100%', '80%'], mx: 'auto', mb: 2, fontSize: '1.5em', py: 1, textAlign: 'center', position: 'relative', fontFamily: 'Chakra Petch' }}>

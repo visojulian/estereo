@@ -202,15 +202,18 @@ const styles = {
     display: 'flex',
     justifyContent: 'space-around',
     flexWrap: 'wrap',
+
   },
 
   logoPartners: {
     mx: 'auto',
     maxHeight: ['5em', '8em', '9em'],
+
   },
   logo: {
     mx: 'auto',
     maxHeight: '5em',
+
   },
   logoFooter: {
     width: '40%',
