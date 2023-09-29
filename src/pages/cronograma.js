@@ -279,7 +279,7 @@ const styles = {
     },
     td: {
       fontSize: '0.8em',
-      pb: 3,
+      py: 4,
       px: 2,
       '&:first-of-type': {
         color: 'white',
@@ -287,13 +287,15 @@ const styles = {
       }
     },
     tr: {
-      display: 'flex',
-      flexDirection: 'column',
+      display: ['flex', ''],
+      flexDirection: ['column', 'row'],
       td: {
+        width: ['100%', '25%'],
+        lineHeight: '1.2em',
         '~td': {
           m: 'auto',
-          p: 4,
-          width: '75%',
+          p: '1.5em 0',
+          width: ['90%', '75%'],
         },
       }
     },
