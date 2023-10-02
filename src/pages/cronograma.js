@@ -201,6 +201,10 @@ export default function Cronograma() {
                     <td>20:30 hs </td>
                     <td> Tercera Oposición</td>
                   </tr>
+                  <tr>
+                    <td>21:15 hs </td>
+                    <td> Hoy Trasnoche</td>
+                  </tr>
                 </tbody>
               </table>
 
