@@ -2,6 +2,7 @@
 import { jsx, Image, Box, Heading, Text, Button } from 'theme-ui';
 import lasraras from 'assets/lasraras.png'
 import actuacion from 'assets/actuacion.png'
+import amnistia from 'assets/sponsor/amnistia.png'
 import Logo from 'assets/logo.svg'
 import { Link } from 'components/link';
 
@@ -148,5 +149,13 @@ const cards = [
     combineColor: 'yellow',
     link: '/actuacion',
     img: actuacion,
+  },
+  {
+    title: 'Amnistía Internacional - Escribí por los derechos',
+    price: 'VER MÁS',
+    bgColor: 'fourth',
+    combineColor: 'third',
+    link: '/amnistia',
+    img: amnistia,
   },
 ]
