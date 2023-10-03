@@ -1,6 +1,6 @@
 export default [
   {
-    path: '/lasraras',
+    path: '/talleres',
     label: 'Talleres',
   },
   {
