@@ -66,7 +66,7 @@ export default function Festival() {
               <Text as="p" variant="heroSecondary" sx={{ ...styles.text2, mb: 0 }}>
                 <b>Día y hora:</b> Sábado 7 de octubre - 9:00hs
               </Text>
-              <Text as="p" variant="heroSecondary" sx={{ ...styles.text2, mb: 0 }}>
+              <Text as="p" variant="heroSecondary" sx={{ ...styles.text2, mb: 0, textAlign: 'center' }}>
                 <b>Lugar:</b> Sede de Gobierno UNR - Salón de los Espejos <br /> <Link path={'https://maps.app.goo.gl/ZcwF5cwk2htzcJS68'} target='_blank'>Maipú 1065 - Rosario</Link>
               </Text>
 
