@@ -67,7 +67,7 @@ export default function Festival() {
                 <b>Día y hora:</b> Sábado 7 de octubre - 9:00hs
               </Text>
               <Text as="p" variant="heroSecondary" sx={{ ...styles.text2, mb: 0 }}>
-                <b>Lugar:</b> Biblioteca Argentina <br /> <Link path={'https://maps.app.goo.gl/R3U7yXbGEeqmufX76'} target='_blank'>Dr. Álvarez 1550 - Rosario</Link>
+                <b>Lugar:</b> Sede de Gobierno UNR - Salón de los Espejos <br /> <Link path={'https://maps.app.goo.gl/ZcwF5cwk2htzcJS68'} target='_blank'>Maipú 1065 - Rosario</Link>
               </Text>
 
             </Box>
