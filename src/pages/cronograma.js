@@ -371,7 +371,7 @@ const styles = {
         lineHeight: '1.2em',
         '~td': {
           m: 'auto',
-          p: '1.5em 0',
+          p: '1.5em 0.8em',
           width: ['90%', '75%'],
         },
       }
