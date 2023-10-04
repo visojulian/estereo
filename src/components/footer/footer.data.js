@@ -65,7 +65,7 @@ export default {
     },
     {
       id: 5,
-      logos: [Biblioteca, Cultura, Diputados, Galpon, Esc, Cairo, Fomento, Labso, Municipalidad, Unraf, MinCultura, ConcejoMuni, Aehgar],
+      logos: [MinCultura, ConcejoMuni, Municipalidad, Unraf, Biblioteca, Cultura, Diputados, Galpon, Esc, Cairo, Fomento, Labso],
       altText: 'Institución',
       title: 'Instituciones',
     },
