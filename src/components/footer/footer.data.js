@@ -23,7 +23,7 @@ import Drop from 'assets/sponsor/drop.png';
 import Podcasteros from 'assets/sponsor/podcasteros.png';
 import TodoSobrePodcast from 'assets/sponsor/todosobre.png';
 import EscuchaPodcast from 'assets/sponsor/escuchapodcast.png';
-import Aehgar from 'assets/sponsor/aehgar.png';
+import Warecloud from 'assets/sponsor/warecloud.png';
 import Gato from 'assets/sponsor/eglc.png';
 import Amr from 'assets/sponsor/amr.png';
 import Posta from 'assets/sponsor/posta.png';
@@ -59,7 +59,7 @@ export default {
     },
     {
       id: 4,
-      logos: [SanCristobal, Taragui, Cima, Hindenburg, Chevallier, Brujula, Ugr, ImageCampus, Amr, LaCapital, Dev],
+      logos: [SanCristobal, Taragui, Cima, Hindenburg, Chevallier, Brujula, Ugr, ImageCampus, Amr, LaCapital, Warecloud, Dev],
       altText: 'Partner',
       title: 'Partners',
     },
